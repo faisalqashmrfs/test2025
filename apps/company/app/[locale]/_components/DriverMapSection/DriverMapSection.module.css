@@ -1,0 +1,477 @@
+.xcar-driver-map-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  font-family: inherit;
+  background-color: #c0cbda;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+/* ========================================================= */
+/* Top Context Banner                                        */
+/* ========================================================= */
+
+.xcar-top-banner {
+  background-color: #111a2e;
+  color: #ffffff;
+  padding: 10px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 11.5px;
+}
+
+.xcar-banner-left {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+.xcar-status-dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.xcar-banner-label {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.xcar-banner-time {
+  color: #94a3b8;
+}
+
+.xcar-banner-divider {
+  color: #334155;
+}
+
+.xcar-banner-route,
+.xcar-banner-vehicle {
+  color: #cbd5e1;
+}
+
+.xcar-banner-route strong,
+.xcar-banner-vehicle strong {
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.xcar-view-details-btn {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: none;
+  padding: 6px 14px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: 800;
+  cursor: pointer;
+  letter-spacing: 0.5px;
+  transition: opacity 0.2s ease;
+}
+
+.xcar-view-details-btn:hover {
+  opacity: 0.9;
+}
+
+/* ========================================================= */
+/* Header & Filter Bar Area                                  */
+/* ========================================================= */
+
+.xcar-map-header {
+  padding: 20px 24px 16px 24px;
+}
+
+.xcar-date-subtitle {
+  font-size: 10.5px;
+  color: #64748b;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.xcar-page-title {
+  font-size: 26px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.xcar-page-desc {
+  font-size: 12px;
+  color: #475569;
+  margin: 0 0 16px 0;
+}
+
+.xcar-filters-grid {
+  display: grid;
+  grid-template-columns: 2fr 1.2fr 1.2fr;
+  gap: 12px;
+}
+
+.xcar-input-wrapper,
+.xcar-select-wrapper {
+  position: relative;
+  background-color: #ffffff;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+}
+
+.xcar-input-wrapper input,
+.xcar-select-wrapper select {
+  width: 100%;
+  border: none;
+  outline: none;
+  background: transparent;
+  padding: 10px 14px;
+  font-size: 11px;
+  color: #334155;
+  font-weight: 500;
+  appearance: none;
+}
+
+.xcar-input-icon,
+.xcar-select-arrow {
+  position: absolute;
+  right: 12px;
+  font-size: 11px;
+  color: #64748b;
+  pointer-events: none;
+}
+
+/* ========================================================= */
+/* Map Viewport Area                                         */
+/* ========================================================= */
+.xcar-map-viewport {
+  position: relative;
+  height: 520px;
+  background-color: #030712;
+  
+  /* --- إضافة صورة الخلفية هنا --- */
+  background-image: url('./MapImage.png'); /* المسار يبدأ مباشرة من مجلد public */
+  background-size: cover;                      /* لتغطية المساحة بالكامل */
+  background-position: center;                 /* لتوسط الصورة */
+  background-repeat: no-repeat;
+  
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-top: 1px solid #1e293b;
+}
+
+
+/* Radar Heat Circles Background */
+.xcar-radar-background {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.xcar-radar-circle {
+  position: absolute;
+  border-radius: 50%;
+}
+
+.xcar-radar-circle--outer {
+  width: 650px;
+  height: 650px;
+  background: radial-gradient(circle, rgba(153, 27, 27, 0.35) 0%, rgba(120, 20, 20, 0.15) 100%);
+  border: 1px solid rgba(239, 68, 68, 0.15);
+}
+
+.xcar-radar-circle--mid-outer {
+  width: 480px;
+  height: 480px;
+  background: radial-gradient(circle, rgba(194, 65, 12, 0.45) 0%, rgba(154, 52, 18, 0.2) 100%);
+  border: 1px solid rgba(249, 115, 22, 0.2);
+}
+
+.xcar-radar-circle--mid-inner {
+  width: 320px;
+  height: 320px;
+  background: radial-gradient(circle, rgba(21, 128, 61, 0.55) 0%, rgba(22, 101, 52, 0.25) 100%);
+  border: 1px solid rgba(34, 197, 94, 0.25);
+}
+
+.xcar-radar-circle--center {
+  width: 170px;
+  height: 170px;
+  background: radial-gradient(circle, rgba(6, 78, 59, 0.8) 0%, rgba(4, 47, 38, 0.4) 100%);
+  border: 1px solid rgba(16, 185, 129, 0.3);
+}
+
+/* Floating Controls (Top Right) */
+.xcar-map-controls {
+  position: absolute;
+  top: 16px;
+  right: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  z-index: 10;
+}
+
+.xcar-map-controls button {
+  width: 28px;
+  height: 28px;
+  background-color: rgba(15, 23, 42, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.15);
+  color: #ffffff;
+  border-radius: 4px;
+  font-size: 11px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  backdrop-filter: blur(4px);
+}
+
+/* Top-Left Floating Drivers Panel */
+.xcar-drivers-panel {
+  position: absolute;
+  top: 16px;
+  left: 16px;
+  width: 210px;
+  background-color: rgba(11, 17, 29, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  padding: 14px;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+  box-shadow: 0 10px 25px -5px rgba(0, 0, 0, 0.5);
+}
+
+.xcar-panel-header {
+  display: flex;
+  align-items: baseline;
+  gap: 8px;
+}
+
+.xcar-drivers-count {
+  font-size: 16px;
+  font-weight: 800;
+  color: #ffffff;
+}
+
+.xcar-panel-title {
+  font-size: 11.5px;
+  color: #cbd5e1;
+  font-weight: 500;
+}
+
+.xcar-available-sub {
+  font-size: 10px;
+  color: #4ade80;
+  margin: 4px 0 12px 0;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.xcar-green-dot {
+  width: 6px;
+  height: 6px;
+  background-color: #4ade80;
+  border-radius: 50%;
+}
+
+/* Distance Progress Bars */
+.xcar-distance-bars {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.xcar-bar-row {
+  display: flex;
+  flex-direction: column;
+  gap: 3px;
+}
+
+.xcar-bar-label {
+  display: flex;
+  justify-content: space-between;
+  font-size: 9.5px;
+  color: #94a3b8;
+}
+
+.xcar-bar-label strong {
+  color: #ffffff;
+}
+
+.xcar-progress-track {
+  width: 100%;
+  height: 3px;
+  background-color: rgba(255, 255, 255, 0.1);
+  border-radius: 2px;
+  overflow: hidden;
+}
+
+.xcar-progress-fill {
+  height: 100%;
+  border-radius: 2px;
+}
+
+.xcar-fill--green {
+  background-color: #22c55e;
+}
+
+.xcar-fill--teal {
+  background-color: #14b8a6;
+}
+
+.xcar-fill--orange {
+  background-color: #f97316;
+}
+
+.xcar-fill--red {
+  background-color: #ef4444;
+}
+
+/* ========================================================= */
+/* Map Pins Positioning                                      */
+/* ========================================================= */
+
+.xcar-map-pin {
+  position: absolute;
+  z-index: 5;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.xcar-pin--center {
+  background-color: #f97316;
+  width: 28px;
+  height: 28px;
+  border-radius: 6px;
+  box-shadow: 0 0 15px rgba(249, 115, 22, 0.6);
+}
+
+.xcar-pin-center-icon {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+/* Generic Label Pin (AR, MK, SL, 1D) */
+.xcar-pin--ar,
+.xcar-pin--mk,
+.xcar-pin--sl,
+.xcar-pin--id {
+  background-color: rgba(15, 23, 42, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  border-radius: 6px;
+  padding: 4px 8px;
+  font-size: 10px;
+  font-weight: 700;
+  color: #ffffff;
+  position: absolute;
+  backdrop-filter: blur(4px);
+}
+
+.xcar-pin-status {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  position: absolute;
+  bottom: -2px;
+  right: -2px;
+  border: 1px solid #0f172a;
+}
+
+.xcar-status--online {
+  background-color: #22c55e;
+}
+
+.xcar-status--active {
+  background-color: #f97316;
+}
+
+/* Pin Positions matching screenshot */
+.xcar-pin--ar {
+  top: 48%;
+  left: 42%;
+}
+
+.xcar-pin--mk {
+  top: 55%;
+  right: 40%;
+}
+
+.xcar-pin--sl {
+  bottom: 28%;
+  left: 31%;
+}
+
+.xcar-pin--id {
+  top: 38%;
+  right: 44%;
+  color: #64748b;
+}
+
+/* ========================================================= */
+/* Bottom-Left Status Legend Panel                           */
+/* ========================================================= */
+
+.xcar-status-legend-panel {
+  position: absolute;
+  bottom: 16px;
+  left: 16px;
+  background-color: rgba(11, 17, 29, 0.75);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  padding: 10px 14px;
+  backdrop-filter: blur(8px);
+  z-index: 10;
+}
+
+.xcar-legend-title {
+  font-size: 10px;
+  color: #94a3b8;
+  font-weight: 600;
+  display: block;
+  margin-bottom: 6px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.xcar-legend-items {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 10px;
+  color: #ffffff;
+}
+
+.xcar-legend-item {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.xcar-legend-dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+}
+
+.xcar-dot--online {
+  background-color: #22c55e;
+}
+
+.xcar-dot--active {
+  background-color: #f97316;
+}
+
+.xcar-dot--offline {
+  background-color: #64748b;
+}

@@ -1,0 +1,172 @@
+{
+  "sidebar": {
+    "overview": "Übersicht",
+    "tripRequests": "Fahrtanfragen",
+    "offers": "Angebote",
+    "invoices": "Rechnungen",
+    "driverMap": "Fahrerkarte",
+    "analytics": "Analysen",
+    "guide": "Handbuch",
+    "teamMembers": "Teammitglieder",
+    "settings": "Einstellungen"
+  },
+  "overview": {
+    "greeting": "Guten Morgen",
+    "verified": "VERIFIZIERT",
+    "activeRequests": "AKTIVE ANFRAGEN",
+    "awaitingAssignment": "Wartet auf Zuweisung",
+    "pendingOffers": "OFFENE ANGEBOTE",
+    "newSinceYesterday": "Neu seit gestern",
+    "totalSpent": "GESAMTAUSGABEN",
+    "thisMonth": "Diesen Monat",
+    "completedTrips": "ABGESCHLOSSENE FAHRTEN",
+    "youHave": "Sie haben",
+    "active": "aktive",
+    "requestsAnd": "Anfragen und",
+    "offers": "Angebote",
+    "awaitingReview": "warten auf Ihre Überprüfung",
+    "recentOffers": "Neueste Angebote",
+    "viewAll": "Alle anzeigen",
+    "pickupAt": "Abholung am:",
+    "deliveryAt": "Lieferung am:",
+    "offerExpireIn": "Angebot läuft ab in:",
+    "priceOffer": "Preisangebot:",
+    "accept": "ANNEHMEN",
+    "reject": "ABLEHNEN",
+    "quickActions": "Schnellaktionen",
+    "startNewRequest": "NEUE ANFRAGE STARTEN",
+    "inviteTeamMember": "TEAMMITGLIED EINLADEN",
+    "viewAllNewOffers": "ALLE NEUEN ANGEBOTE ANZEIGEN",
+    "recentActiveTrips": "Neueste AKTIVE Fahrten",
+    "offerId": "Angebots-ID",
+    "driverName": "Fahrername",
+    "pickupLocation": "Abholort & Datum",
+    "deliveryLocation": "Lieferort & Datum",
+    "vehicleModel": "Fahrzeugmodell & Typ",
+    "transportType": "Transportart",
+    "state": "Status",
+    "action": "Aktion",
+    "showingTripsText": "Zeige 10 von 42 Anfragen",
+    "tripsAnalytics": "Fahrtenanalysen",
+    "todayLabel": "Freitag (Heute)",
+    "allRegions": "Alle Regionen",
+    "europe": "Europa",
+    "america": "Nordamerika",
+    "thisWeek": "Diese Woche",
+    "thisYear": "Dieses Jahr"
+  },
+  "tripRequests": {
+    "draft": "Entwurf",
+    "completeRequest": "ANFRAGE ABSCHLIESSEN",
+    "myRequests": "Meine Anfragen",
+    "subtitle": "Verwalten Sie aktive und ausstehende hochwertige Fahrzeugtransporte.",
+    "newRequest": "NEUE ANFRAGE",
+    "totalRequests": "Gesamte Anfragen",
+    "totalRequestsSub": "Alle Fahrten in allen Status",
+    "pending": "Ausstehend",
+    "pendingSub": "Fahrten, die auf Fahrer warten",
+    "inTransit": "Unterwegs",
+    "arrivingToday": "Kommen heute an",
+    "delivered": "Geliefert",
+    "thisMonth": "Diesen Monat"
+  },
+  
+  "newTripRequest": {
+    "tripType": {
+      "transportTypeTitle": "Transportart",
+      "tripTypeTitle": "Fahrttyp",
+      "required": "erforderlich",
+      "driven": "Eigenfahrt",
+      "carrier": "Transporter / LKW",
+      "oneWay": "Einfache Fahrt",
+      "roundTrip": "Hin- und Rückfahrt",
+      "multiTrip": "Mehrfachfahrt"
+    },
+    "vehicle": {
+      "title": "Fahrzeug",
+      "subtitle": "Fügen Sie alle Fahrzeuge hinzu, die in dieser Anfrage enthalten sind",
+      "counterSuffix": "Fahrzeug hinzugefügt",
+      "of": "von",
+      "carType": "Fahrzeugtyp",
+      "carModel": "Fahrzeugmodell",
+      "transmissionType": "Getriebeart",
+      "additionalInstruction": "Zusätzliche Anweisung",
+      "instructionHint": "Sie können mehr als eine Option auswählen",
+      "specialNotes": "Besondere Hinweise",
+      "required": "erforderlich",
+      "duplicate": "Duplizieren 📑",
+      "remove": "Entfernen 🗑️",
+      "addOtherVehicle": "Weiteres Fahrzeug hinzufügen",
+      "carTypes": {
+        "sedan": "Limousine / Coupé",
+        "suv": "SUV / Crossover",
+        "van": "Van / Pick-up",
+        "luxury": "Luxus / Klassik",
+        "sports": "Sportwagen",
+        "other": "Sonstige"
+      },
+      "carModels": {
+        "volkswagen": "Volkswagen",
+        "toyota": "Toyota",
+        "bmw": "BMW",
+        "mercedes": "Mercedes",
+        "hyundai": "Hyundai",
+        "tesla": "Tesla",
+        "peugeot": "Peugeot",
+        "other": "Sonstige"
+      },
+      "transmissions": {
+        "manual": "Manuell",
+        "automatic": "Automatik"
+      },
+      "instructions": {
+        "wash": "Fahrzeugwäsche angefordert",
+        "callBefore": "Anruf vor Lieferung",
+        "ev": "Elektrofahrzeug (EV)",
+        "nightBox": "Nachtbriefkasten bei Lieferung",
+        "redPlate": "Rotes Kennzeichen",
+        "refuel": "Vor Lieferung auftanken"
+      },
+      "specialNotesOptions": {
+        "doc1": "Hinweisdokument 1",
+        "doc2": "Hinweisdokument 2",
+        "other": "Sonstige"
+      }
+    },
+    "photoAndDriver": {
+      "photoTitle": "Fotoprotokoll-Paket auswählen",
+      "required": "erforderlich",
+      "driverTitle": "Fahrerauswahl:",
+      "assignLabel": "Fahrer zuweisen",
+      "statusOn": "Ein",
+      "statusOff": "Aus",
+      "driverCalloutTitle": "Hinweis:",
+      "driverCalloutText": "Aktivieren Sie dies, um diese Fahrt direkt einem vereinbarten Fahrer zuzuweisen.",
+      "continueBtn": "WEITER ->",
+      "saveDraftBtn": "ALS ENTWURF SPEICHERN 🔖",
+      "bundles": {
+        "basic": {
+          "label": "Basis",
+          "title": "4 Fotos",
+          "text": "Sie haben das Basis-Paket gewählt. Es enthält 4 Fotos für die Außenabdeckung aus 4 Winkeln (vorne, hinten und beide Seiten)."
+        },
+        "standard": {
+          "label": "Standard",
+          "title": "8 Fotos",
+          "text": "Sie haben das Standard-Paket gewählt. Es enthält 8 Fotos für eine vollständige Außen- und Reifenabdeckung."
+        },
+        "full": {
+          "label": "Vollständig",
+          "title": "12 Fotos",
+          "text": "Sie haben das vollständige Paket gewählt. Es enthält 12 Fotos für die detaillierte Innen- und Außenansicht."
+        },
+        "premium": {
+          "label": "Premium",
+          "title": "16+ Fotos",
+          "text": "Sie haben das Premium-Paket gewählt. Bietet eine lückenlose Fotodokumentation des Fahrzeugs."
+        }
+      }
+    }
+  }
+
+}

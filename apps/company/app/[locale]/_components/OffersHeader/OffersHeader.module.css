@@ -1,0 +1,154 @@
+.xcar-offers-header {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  width: 100%;
+}
+
+/* Banner */
+.xcar-offers-header__banner {
+  background-color: #0b192c;
+  color: #ffffff;
+  padding: 12px 24px;
+  border-radius: 8px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.xcar-offers-header__banner-left {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+  font-size: 14px;
+}
+
+.xcar-offers-header__status-badge {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-weight: 600;
+}
+
+.xcar-offers-header__dot {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.xcar-offers-header__route {
+  font-weight: 600;
+}
+
+.xcar-offers-header__arrow {
+  margin: 0 4px;
+}
+
+.xcar-offers-header__divider {
+  opacity: 0.4;
+}
+
+.xcar-offers-header__vehicle {
+  color: #a0aec0;
+}
+
+.xcar-offers-header__vehicle strong {
+  color: #ffffff;
+}
+
+.xcar-offers-header__complete-btn {
+  background-color: #ffffff;
+  color: #0b192c;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-weight: 700;
+  font-size: 12px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+/* Main Text */
+.xcar-offers-header__main {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.xcar-offers-header__date {
+  font-size: 13px;
+  color: #8c98a9;
+}
+
+.xcar-offers-header__title {
+  font-size: 32px;
+  font-weight: 800;
+  color: #0b192c;
+  margin: 0;
+}
+
+.xcar-offers-header__subtitle {
+  font-size: 14px;
+  color: #5a6a85;
+  margin: 0;
+}
+
+/* Cards Grid */
+.xcar-offers-header__cards-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 16px;
+}
+
+.xcar-stat-card {
+  background-color: #dce4ed;
+  border: 1px solid #c5d1e0;
+  border-radius: 12px;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.xcar-stat-card__label {
+  font-size: 14px;
+  color: #4a5568;
+  font-weight: 600;
+}
+
+.xcar-stat-card__value {
+  font-size: 36px;
+  font-weight: 800;
+  color: #0b192c;
+  line-height: 1;
+}
+
+.xcar-stat-card__footer {
+  border-top: 1px solid #b3c3d4;
+  padding-top: 12px;
+  font-size: 13px;
+  color: #718096;
+}
+
+/* Red Variant */
+.xcar-stat-card--danger {
+  background-color: #fde8e8;
+  border-color: #f8b4b4;
+}
+
+.xcar-stat-card--danger .xcar-stat-card__label {
+  color: #c53030;
+}
+
+.xcar-stat-card--danger .xcar-stat-card__value {
+  color: #9b2c2c;
+}
+
+.xcar-stat-card--danger .xcar-stat-card__footer {
+  border-top-color: #f8b4b4;
+  color: #c53030;
+}

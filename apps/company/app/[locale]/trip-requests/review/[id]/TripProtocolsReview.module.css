@@ -1,0 +1,465 @@
+/* Container & Layout */
+.tpr_container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 2rem 1.5rem 4rem 1.5rem; */
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+  color: #1e293b;
+  background-color: #f8fafc;
+}
+
+/* Header & Navigation */
+.tpr_backLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #64748b;
+  text-decoration: none;
+  font-size: 0.875rem;
+  font-weight: 500;
+  margin-bottom: 0.75rem;
+  transition: color 0.2s;
+}
+
+.tpr_backLink:hover {
+  color: #0f172a;
+}
+
+.tpr_headerDate {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.tpr_pageTitle {
+  font-size: 1.875rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin: 0 0 0.5rem 0;
+}
+
+.tpr_pageSub {
+  font-size: 0.95rem;
+  color: #64748b;
+  margin: 0;
+}
+
+/* Section Titles */
+.tpr_sectionTitle {
+  font-size: 1.25rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin: 0 0 1rem 0;
+}
+
+/* Trip Overview Card */
+.tpr_overviewCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.25rem 1.5rem;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(160px, 1fr));
+  gap: 1.5rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.05);
+}
+
+.tpr_overviewCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.tpr_overviewLabel {
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.tpr_overviewValue {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: #0f172a;
+}
+
+.tpr_overviewSubText {
+  font-size: 0.8rem;
+  color: #94a3b8;
+}
+
+/* Tabs */
+.tpr_tabsContainer {
+  display: flex;
+  gap: 1rem;
+  border-bottom: 2px solid #e2e8f0;
+  padding-bottom: 0.5rem;
+}
+
+.tpr_tabBtn {
+  background: none;
+  border: none;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #64748b;
+  cursor: pointer;
+  position: relative;
+  transition: color 0.2s;
+}
+
+.tpr_tabBtn:hover {
+  color: #0f172a;
+}
+
+.tpr_tabActive {
+  color: #2563eb;
+}
+
+.tpr_tabActive::after {
+  content: '';
+  position: absolute;
+  bottom: -0.6rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #2563eb;
+}
+
+/* Signatures Section */
+.tpr_signaturesGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 1.5rem;
+}
+
+.tpr_sigBox {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tpr_sigTitle {
+  font-size: 1rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.5rem;
+}
+
+.tpr_infoRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+}
+
+.tpr_infoLabel {
+  color: #64748b;
+}
+
+.tpr_infoVal {
+  font-weight: 500;
+  color: #0f172a;
+}
+
+.tpr_canvasPreview {
+  margin-top: 1rem;
+  height: 100px;
+  border: 1px dashed #cbd5e1;
+  border-radius: 8px;
+  background-color: #f8fafc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.5rem;
+}
+
+/* Vehicle Information */
+.tpr_vehicleInfoGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tpr_vehicleInfoGrid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tpr_vehicleLeftCol {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.tpr_metricsRow {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 1rem;
+}
+
+.tpr_metricCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem;
+}
+
+.tpr_metricLabel {
+  font-size: 0.8rem;
+  color: #64748b;
+}
+
+.tpr_metricValue {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-top: 0.25rem;
+}
+
+.tpr_itemsCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1.25rem;
+}
+
+.tpr_itemsTitle {
+  font-size: 0.9rem;
+  font-weight: 600;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+}
+
+.tpr_itemsGrid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.75rem;
+}
+
+.tpr_itemCheck {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.85rem;
+  color: #334155;
+}
+
+.tpr_checkIcon {
+  color: #16a34a;
+  font-weight: bold;
+}
+
+.tpr_dashboardImgCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 100%;
+  min-height: 220px;
+}
+
+.tpr_dashboardImgCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* Gallery Section */
+.tpr_accordionRow {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 8px;
+  padding: 1rem 1.25rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 600;
+  color: #1e293b;
+}
+
+.tpr_galleryGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(220px, 1fr));
+  gap: 1rem;
+}
+
+.tpr_galleryCard {
+  position: relative;
+  border-radius: 10px;
+  overflow: hidden;
+  height: 180px;
+  border: 1px solid #e2e8f0;
+}
+
+.tpr_galleryCard img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.tpr_galleryOverlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(transparent, rgba(15, 23, 42, 0.85));
+  padding: 1rem 0.75rem 0.75rem 0.75rem;
+  color: #ffffff;
+}
+
+.tpr_galleryTitle {
+  font-size: 0.875rem;
+  font-weight: 600;
+}
+
+.tpr_gallerySub {
+  font-size: 0.75rem;
+  opacity: 0.8;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+}
+
+/* Damage Report Section */
+.tpr_damageCard {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 12px;
+  padding: 1.5rem;
+  display: grid;
+  grid-template-columns: 320px 1fr;
+  gap: 1.5rem;
+}
+
+@media (max-width: 768px) {
+  .tpr_damageCard {
+    grid-template-columns: 1fr;
+  }
+}
+
+.tpr_damageImgCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+}
+
+.tpr_damageMainImg {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.tpr_thumbsContainer {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.tpr_thumbImg {
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border-radius: 6px;
+  cursor: pointer;
+  border: 2px solid transparent;
+}
+
+.tpr_damageDetailsCol {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.tpr_damageTitle {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: #0f172a;
+}
+
+.tpr_damageMeta {
+  font-size: 0.85rem;
+  color: #64748b;
+}
+
+.tpr_damageDesc {
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+  margin-top: 0.5rem;
+}
+
+/* Notes & Actions */
+.tpr_noteBox {
+  background: #ffffff;
+  border: 1px solid #e2e8f0;
+  border-radius: 10px;
+  padding: 1rem 1.25rem;
+  font-size: 0.9rem;
+  color: #334155;
+  line-height: 1.5;
+}
+
+.tpr_actionFooter {
+  display: flex;
+  gap: 1rem;
+  justify-content: flex-end;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tpr_btnConfirm {
+  background-color: #2563eb;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tpr_btnConfirm:hover {
+  background-color: #1d4ed8;
+}
+
+.tpr_btnExport {
+  background-color: #ffffff;
+  color: #1e293b;
+  border: 1px solid #cbd5e1;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tpr_btnExport:hover {
+  background-color: #f1f5f9;
+}
+
+.tpr_btnComplaint {
+  background-color: #ef4444;
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.tpr_btnComplaint:hover {
+  background-color: #dc2626;
+}

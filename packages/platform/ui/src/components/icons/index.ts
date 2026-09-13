@@ -1,0 +1,1 @@
+export { ReceiptDiscountIcon } from './receipt-discount';

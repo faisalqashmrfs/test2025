@@ -1,0 +1,1524 @@
+/*!*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/next@14.2.35_@babel+core@7._9709720bd5cd1f2817f1144e073790fd/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._9709720bd5cd1f2817f1144e073790fd/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!./app/[locale]/_components/DriverGuideCenter/DriverGuideCenter.module.css ***!
+  \*******************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+.DriverGuideCenter_xcar-guide-container__3Yfky {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #1e293b;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* ========================================================= */
+/* 1. Sticky Header & Top Tabs Navigation                    */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-sticky-header-wrapper__6ujGC {
+  position: sticky;
+  top: -50px;
+  z-index: 100;
+  background-color: #f9fafb;
+  padding: 16px 24px 0 24px;
+  border-bottom: 1px solid #94a3b8;
+  /* أضف هذا السطر لمنع تداخل الشفافية أثناء التمرير */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); 
+}
+
+.DriverGuideCenter_xcar-header-top__IK9is {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.DriverGuideCenter_xcar-date-subtitle__Tcmau {
+  font-size: 11px;
+  color: #64748b;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.DriverGuideCenter_xcar-page-title__mK_u3 {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.DriverGuideCenter_xcar-page-desc__CMpOp {
+  font-size: 12.5px;
+  color: #475569;
+  margin: 0;
+}
+
+.DriverGuideCenter_xcar-download-btn__JXlor {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.DriverGuideCenter_xcar-download-btn__JXlor:hover {
+  opacity: 0.9;
+}
+
+/* Main Top Navigation Tabs */
+.DriverGuideCenter_xcar-tabs-nav__4d8CU {
+  display: flex;
+  gap: 32px;
+}
+
+.DriverGuideCenter_xcar-tab-btn__1qUQh {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0 0 12px 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.DriverGuideCenter_xcar-tab-btn__1qUQh:hover {
+  color: #0f172a;
+}
+
+.DriverGuideCenter_xcar-tab-btn--active__FrVJi {
+  color: #0f172a;
+}
+
+.DriverGuideCenter_xcar-tab-btn--active__FrVJi::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #0f172a;
+  border-radius: 2px 2px 0 0;
+}
+
+/* ========================================================= */
+/* 2. Layout (Sticky Sidebar + Scrollable Body)              */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-guide-layout__wpLea {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  padding: 24px;
+  align-items: start;
+}
+
+/* Left Sticky Sidebar */
+.DriverGuideCenter_xcar-sidebar-nav__aR0x3 {
+  position: sticky;
+  /* تم زيادة وتعديل القيمة إلى 160px ليبقى الـ Sidebar دائماً أسفل الشريط العلوي تماماً بدون أن يتداخل أو يختفي */
+  top: 160px; 
+  align-self: flex-start; /* سطر أساسي لمنع تمدد الشريحة الجانبية مع طول المحتوى */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 90;
+}
+
+.DriverGuideCenter_xcar-sidebar-title__cCf_t {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.DriverGuideCenter_xcar-section-links___A9pQ {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.DriverGuideCenter_xcar-section-link-btn__GeNI4 {
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.DriverGuideCenter_xcar-section-link-btn__GeNI4:hover {
+  color: #0f172a;
+}
+
+.DriverGuideCenter_xcar-section-link-btn--active__dhcDB {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+/* Right Content Stream */
+.DriverGuideCenter_xcar-content-stream__nB2n_ {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Hero Content */
+.DriverGuideCenter_xcar-welcome-title__NZGTR {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.DriverGuideCenter_xcar-welcome-desc__2IS7B {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  max-width: 800px;
+}
+
+.DriverGuideCenter_xcar-brand-banner__KW9EU {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.DriverGuideCenter_xcar-divider__gyj5c {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 10px 0 20px 0;
+}
+
+/* Info Callout Box (European Expansion Protocol) */
+.DriverGuideCenter_xcar-info-callout__sPDOF {
+  background-color: #dbefe6;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.DriverGuideCenter_xcar-callout-icon__yNDss {
+  font-size: 18px;
+  color: #1d4ed8;
+}
+
+.DriverGuideCenter_xcar-callout-title__2d_d_ {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 6px 0;
+}
+
+.DriverGuideCenter_xcar-callout-text__m39pT {
+  font-size: 11.5px;
+  color: #3b82f6;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sections */
+.DriverGuideCenter_xcar-guide-section__X1jDh {
+  scroll-margin-top: 200px; /* للضبط الدقيق عند الضغط على الروابط */
+  margin-bottom: 40px;
+}
+
+.DriverGuideCenter_xcar-section-heading__maayE {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.DriverGuideCenter_xcar-section-p__xJ7Bq {
+  font-size: 12px;
+  color: #475569;
+  margin: 0 0 12px 0;
+}
+
+.DriverGuideCenter_xcar-subheading__r30qj {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+/* Table Preview Header Header */
+.DriverGuideCenter_xcar-table-preview-head__c5JFB {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr;
+  background-color: #e2e8f0;
+  border-radius: 6px 6px 0 0;
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.DriverGuideCenter_xcar-tab-placeholder__BO3Z2 {
+  padding: 60px 0;
+  text-align: center;
+  color: #64748b;
+}
+
+/* ========================================================= */
+/* Platform Overview - Comparison Table Styling              */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-subheading-text__ufSsS {
+  font-size: 13px;
+  color: #64748b;
+  margin: 12px 0 16px 0;
+  font-weight: 500;
+}
+
+.DriverGuideCenter_xcar-table-card__i61Ay {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Row */
+.DriverGuideCenter_xcar-table-header__vE8tt {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.4fr;
+  background-color: #d1dbe8; /* درجة الترويسة الرمادية/الزرقاء الفاتحة */
+  border-bottom: 1px solid #b0c0d4;
+}
+
+.DriverGuideCenter_xcar-th__n5uuX {
+  padding: 16px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  border-right: 1px solid #b0c0d4;
+  display: flex;
+  align-items: center;
+}
+
+.DriverGuideCenter_xcar-th__n5uuX:last-child {
+  border-right: none;
+}
+
+/* Body & Rows */
+.DriverGuideCenter_xcar-table-body__Ywj8m {
+  display: flex;
+  flex-direction: column;
+  background-color: #334155; /* اللون الكحلي الداكن للخلفية */
+}
+
+.DriverGuideCenter_xcar-tr__5rUEW {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.4fr;
+  border-bottom: 1px solid #475569;
+}
+
+.DriverGuideCenter_xcar-tr__5rUEW:last-child {
+  border-bottom: none;
+}
+
+.DriverGuideCenter_xcar-td__BcJsH {
+  padding: 16px 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e2e8f0;
+  border-right: 1px solid #475569;
+  display: flex;
+  align-items: center;
+}
+
+.DriverGuideCenter_xcar-td__BcJsH:last-child {
+  border-right: none;
+}
+
+/* First Column (Feature Titles) */
+.DriverGuideCenter_xcar-td-feature__mjOxP {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ========================================================= */
+/* Account Setup - Stepper Timeline Styling                  */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-stepper-container__tBMgL {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 28px 0;
+}
+
+.DriverGuideCenter_xcar-stepper-item__1TIyE {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.DriverGuideCenter_xcar-stepper-left__8h8ie {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DriverGuideCenter_xcar-stepper-badge__8G7BU {
+  width: 26px;
+  height: 26px;
+  background-color: #1e293b; /* اللون الداكن للدوائر */
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.DriverGuideCenter_xcar-stepper-line___oW1r {
+  width: 2px;
+  background-color: #94a3b8; /* لون الخط العمودي الواصل */
+  flex-grow: 1;
+  margin: 4px 0;
+}
+
+.DriverGuideCenter_xcar-stepper-content__h0tZo {
+  padding-bottom: 24px;
+}
+
+.DriverGuideCenter_xcar-step-title__tug94 {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 3px 0 6px 0;
+}
+
+.DriverGuideCenter_xcar-step-desc__WGguZ {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+  max-width: 720px;
+}
+
+/* Warning Callout Box */
+.DriverGuideCenter_xcar-warning-callout__14Tla {
+  background-color: #fce8e6; /* لون خلفية التحذير الوردي الفاتح */
+  border: 1px solid #f87171; /* إطار أحمر/وردي */
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.DriverGuideCenter_xcar-warning-icon__QWHy5 {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.DriverGuideCenter_xcar-warning-body__ckfwU {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.DriverGuideCenter_xcar-warning-title__kYr2b {
+  font-size: 12px;
+  font-weight: 800;
+  color: #b91c1c;
+  margin: 0;
+}
+
+.DriverGuideCenter_xcar-warning-text__UUPNU {
+  font-size: 11px;
+  color: #b91c1c;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ========================================================= */
+/* Your First Request - Section Divider & Pro Tip Box        */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-section-divider__oP0bP {
+  border: none;
+  border-top: 1px solid #94a3b8;
+  margin: 32px 0;
+}
+
+/* Pro Tip Callout Box (Blue Outline & Light Blue Fill) */
+.DriverGuideCenter_xcar-protip-callout__JfjVa {
+  background-color: #e0eafd; /* خلفية زرقاء فاتحة جداً */
+  border: 1px solid #3b82f6; /* إطار أزرق متناسق */
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.DriverGuideCenter_xcar-protip-icon__Z2MU8 {
+  font-size: 16px;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+}
+
+.DriverGuideCenter_xcar-protip-body__tE3c6 {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #1e40af;
+}
+
+.DriverGuideCenter_xcar-protip-title__EZSgr {
+  font-weight: 800;
+  margin-right: 6px;
+}
+
+.DriverGuideCenter_xcar-protip-text__h__W2 {
+  font-weight: 400;
+}
+
+/* ========================================================= */
+/* Team & Roles - Table Grid Layout                          */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-roles-table-header__Ofqj4 {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 2fr;
+  background-color: #d1dbe8;
+  border-bottom: 1px solid #b0c0d4;
+}
+
+.DriverGuideCenter_xcar-roles-tr__sysg9 {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 2fr;
+  border-bottom: 1px solid #475569;
+}
+
+.DriverGuideCenter_xcar-roles-tr__sysg9:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================================= */
+/* Success Tips - Pro Tip Cards Grid & CTA Section           */
+/* ========================================================= */
+
+.DriverGuideCenter_xcar-protip-grid__B36ai {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.DriverGuideCenter_xcar-protip-card__TXoAg {
+  background-color: rgba(255, 255, 255, 0.45); /* خلفية مع شفافة بلورية */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.DriverGuideCenter_xcar-protip-card-header__KpLBW {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.DriverGuideCenter_xcar-protip-card-title__OBuTK {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.DriverGuideCenter_xcar-protip-badge__Tfa7O {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+}
+
+.DriverGuideCenter_xcar-protip-card-desc__1dNfI {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+
+/* Download CTA Area */
+.DriverGuideCenter_xcar-download-cta-block__6CaOZ {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.DriverGuideCenter_xcar-cta-title__10aWu {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.DriverGuideCenter_xcar-cta-desc__wN_kc {
+  font-size: 12px;
+  color: #475569;
+  margin: 0 0 16px 0;
+}
+
+.DriverGuideCenter_xcar-cta-desc__wN_kc strong {
+  color: #0f172a;
+}
+
+.DriverGuideCenter_xcar-cta-download-btn__66b_V {
+  width: 100%;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.DriverGuideCenter_xcar-cta-download-btn__66b_V:hover {
+  opacity: 0.92;
+}
+
+.DriverGuideCenter_xcar-cta-download-btn__66b_V:active {
+  transform: scale(0.995);
+}
+/*!************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************!*\
+  !*** css ../../node_modules/.pnpm/next@14.2.35_@babel+core@7._9709720bd5cd1f2817f1144e073790fd/node_modules/next/dist/build/webpack/loaders/css-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[2]!../../node_modules/.pnpm/next@14.2.35_@babel+core@7._9709720bd5cd1f2817f1144e073790fd/node_modules/next/dist/build/webpack/loaders/postcss-loader/src/index.js??ruleSet[1].rules[14].oneOf[7].use[3]!../../packages/platform/ui/src/styles/style.module.css ***!
+  \************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************************/
+/* SidebarItem.module.css */
+
+.style_sidebarItem__7SXNX {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem; /* 12px */
+  width: 100%;
+  padding: 0.75rem 1rem; /* 12px 16px */
+  border-radius: 0.75rem; /* 12px */
+  font-size: 0.875rem; /* 14px */
+  font-weight: 500;
+  transition: all 0.2s ease-in-out;
+  text-decoration: none;
+  color: var(--color-slate-500); /* text-gray-600 */
+}
+
+.style_sidebarItem__7SXNX:hover {
+  background-color: #f3f4f6; /* hover:bg-gray-100 */
+  color: var(--color-slate-500); /* hover:text-gray-900 */
+}
+
+.style_active__aTlm2 {
+  color: #ffffff;
+  font-weight: 600;
+  box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+  font-weight: 700;
+}
+
+.style_iconWrapper__KIQrz {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 1.25rem;
+  height: 1.25rem;
+}
+
+/*  ////////////// header //////////////// */
+
+.style_header__80w9d {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 1rem 1.5rem;
+  background-color: transparent;
+}
+
+/* حقل البحث */
+.style_searchWrapper__8N6W5 {
+  position: relative;
+  display: flex;
+  align-items: center;
+  width: 320px;
+}
+
+.style_searchIcon__jJtGp {
+  position: absolute;
+  left: 0.875rem;
+  color: var(--color-slate-400);
+  pointer-events: none;
+}
+
+.style_searchInput__JkOGh {
+  width: 100%;
+  padding: 0.625rem 0.875rem 0.625rem 2.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid transparent;
+  background-color: var(--color-brand-50, #e9eff8);
+  color: var(--color-slate-800);
+  font-size: 0.875rem;
+  outline: none;
+  transition: all 0.2s ease;
+}
+
+.style_searchInput__JkOGh::placeholder {
+  color: var(--color-slate-400);
+}
+
+.style_searchInput__JkOGh:focus {
+  background-color: #ffffff;
+  border-color: var(--color-slate-300);
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+}
+
+/* قسم الأيقونات الجانبي */
+.style_actions__uw3g3 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.style_iconBtn__CxRz9 {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 2.25rem;
+  height: 2.25rem;
+  background: transparent;
+  border: none;
+  border-radius: 0.5rem;
+  color: var(--color-slate-700);
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.style_iconBtn__CxRz9:hover {
+  background-color: rgba(0, 0, 0, 0.05);
+  color: var(--color-slate-900);
+}
+
+
+/* //////////////// OfferCard.module.css //////////////// */
+
+.style_offerCard_card__5M9ky {
+  background-color: var(--color-brand-50, #f2f5fb);
+  border: 1px solid var(--color-slate-300, #cbd5e1);
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 360px;
+  min-width: 300px;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.style_offerCard_card__5M9ky:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+/* Header */
+.style_offerCard_header___E05X {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 0.75rem;
+}
+
+.style_offerCard_route__IwjzK {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+}
+
+.style_offerCard_badge__jCSvB {
+  font-size: 0.75rem;
+  color: var(--color-slate-500);
+}
+
+/* Company / Driver Info */
+.style_offerCard_companySection__8vxKS {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 0.75rem;
+}
+
+.style_offerCard_companyName__8Gd5g {
+  font-size: 0.875rem;
+  color: var(--color-slate-700);
+  margin: 0;
+}
+
+.style_offerCard_rating__UyOfk {
+  font-size: 0.75rem;
+  color: var(--color-slate-500);
+  margin-top: 0.125rem;
+}
+
+.style_offerCard_avatar__c2R15 {
+  width: 2.25rem;
+  height: 2.25rem;
+  border-radius: 0.375rem;
+  object-fit: cover;
+}
+
+.style_offerCard_divider__qVQtj {
+  height: 1px;
+  background-color: var(--color-slate-300);
+  border: none;
+  margin: 0 0 0.75rem 0;
+}
+
+/* Details List */
+.style_offerCard_detailsList__D1W74 {
+  display: flex;
+  flex-direction: column;
+  gap: 0.375rem;
+  margin-bottom: 0.75rem;
+}
+
+.style_offerCard_detailRow__CTPi4 {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8125rem;
+}
+
+.style_offerCard_label__0j_5S {
+  color: var(--color-slate-500);
+}
+
+.style_offerCard_value__Ra4VV {
+  color: var(--color-slate-800);
+  font-weight: 500;
+}
+
+/* Price */
+.style_offerCard_priceRow__QIvzC {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.style_offerCard_priceLabel___lkaP {
+  font-size: 0.8125rem;
+  color: var(--color-slate-500);
+}
+
+.style_offerCard_priceValue__fyTKA {
+  font-size: 1.25rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+}
+
+/* Action Buttons */
+.style_offerCard_actions__QySBb {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.style_offerCard_btnAccept__ijoqe {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #22c55e;
+  background-color: rgba(34, 197, 94, 0.12);
+  color: #15803d;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.style_offerCard_btnAccept__ijoqe:hover {
+  background-color: rgba(34, 197, 94, 0.25);
+}
+
+.style_offerCard_btnReject__90pGU {
+  flex: 1;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid #ef4444;
+  background-color: rgba(239, 68, 68, 0.12);
+  color: #b91c1c;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.style_offerCard_btnReject__90pGU:hover {
+  background-color: rgba(239, 68, 68, 0.25);
+}
+
+/* ///////////////// ActionButton.module.css ///////////////// */
+
+.style_actionButton_btn__AOrnQ {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  padding: 0.875rem 1.5rem;
+  border-radius: 0.5rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  border: none;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  white-space: nowrap;
+  width: 100%;
+}
+
+/* الأشكال المختلفة (Variants) */
+.style_actionButton_primary__8xqTX {
+  background-color: var(--color-brand-500, #132246);
+  color: #ffffff;
+}
+
+.style_actionButton_primary__8xqTX:hover {
+  background-color: var(--color-brand-600, #0c1731);
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(19, 34, 70, 0.2);
+}
+
+.style_actionButton_primary__8xqTX:active {
+  transform: translateY(0);
+}
+
+.style_actionButton_icon__D8BU_ {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ////////////////////// Table.module.css ////////////////////// */
+
+.style_dataTable_container__MuBs0 {
+  width: 100%;
+  background-color: var(--color-brand-50, #f2f5fb);
+  border-radius: 1rem;
+  overflow: hidden;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.03);
+  border: 1px solid var(--color-slate-200, #e2e8f0);
+}
+
+.style_dataTable_wrapper__52pGn {
+  width: 100%;
+  overflow-x: auto;
+}
+
+.style_dataTable_table__Wbjo1 {
+  width: 100%;
+  border-collapse: separate;
+  border-spacing: 0;
+  text-align: left;
+}
+
+.style_dataTable_thead__vLoOu {
+  background-color: transparent;
+}
+
+.style_dataTable_th__7Jx8l {
+  padding: 1.25rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-slate-600);
+  text-transform: capitalize;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.05);
+  white-space: nowrap;
+}
+
+/* خلفية الداكنة للصفوف الداكنة كما في الصورة */
+.style_dataTable_tbody__DJOEF {
+  background-color: #2b3954; /* الداكن الفخم الظاهر بالصورة */
+}
+
+.style_dataTable_tr__YN6d8 {
+  transition: background-color 0.2s;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+.style_dataTable_tr__YN6d8:hover {
+  background-color: rgba(255, 255, 255, 0.03);
+}
+
+.style_dataTable_td__6cFis {
+  padding: 1.125rem 1rem;
+  font-size: 0.8125rem;
+  color: #ffffff;
+  vertical-align: middle;
+}
+
+/* التنسيقات الثانوية للسطر الثاني داخل الخلية (مثل التاريخ أو النوع الفرعي) */
+
+.style_dataTable_subText__gm3gb {
+  display: block;
+  font-size: 0.7rem;
+  color: #94a3b8;
+  margin-top: 0.25rem;
+}
+
+.style_dataTable_primaryText__qDpsN {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+/* الحالات (State Badges) */
+.style_dataTable_statusDelivered__lG_lJ {
+  color: #34d399; /* أخضر */
+  font-weight: 600;
+}
+
+.style_dataTable_statusInTransit__Uovpu {
+  color: #60a5fa; /* أزرق */
+  font-weight: 600;
+}
+
+.style_dataTable_statusAssigned__7Jxla {
+  color: #c084fc; /* بنفسجي */
+  font-weight: 600;
+}
+
+.style_dataTable_statusPending__VEDzP {
+  color: #fbbf24; /* أصفر/أورانج */
+  font-weight: 600;
+}
+
+/* الأزرار داخل الجدول */
+.style_dataTable_actionBtn__Jb8q_ {
+  background: none;
+  border: none;
+  color: #ffffff;
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-decoration: underline;
+  cursor: pointer;
+  letter-spacing: 0.05em;
+  padding: 0;
+}
+
+.style_dataTable_actionBtn__Jb8q_:hover {
+  color: #60a5fa;
+}
+
+/* الترقيم السفلي (Pagination) */
+.style_dataTable_footer__67en6 {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1rem 1.5rem;
+  background-color: var(--color-brand-50, #f2f5fb);
+  font-size: 0.8125rem;
+  color: var(--color-slate-600);
+}
+
+.style_dataTable_paginationFlex__8o1GH {
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.style_dataTable_pageBtn__XUdAK {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 0.375rem;
+  border: none;
+  background: transparent;
+  color: var(--color-slate-600);
+  font-size: 0.8125rem;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.style_dataTable_pageBtn__XUdAK:hover {
+  background-color: var(--color-slate-200);
+}
+
+.style_dataTable_pageBtnActive__amfJg {
+  background-color: #2b3954;
+  color: #ffffff;
+  font-weight: 700;
+}
+
+.style_dataTable_pageBtnActive__amfJg:hover {
+  background-color: #1e293b;
+}
+
+
+/* //////////////// BarChartCard.module.css //////////////// */
+
+.style_analytics_card__5doxm {
+  position: relative;
+  width: 100%;
+  height: 320px;
+  background-color: #0b0f19;
+  border-radius: 1.25rem;
+  padding: 1.5rem;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+/* خلفية الشبكة الهندسية (Cyberpunk Grid Mesh) */
+.style_analytics_bgMesh__eT_9L {
+  position: absolute;
+  inset: 0;
+  background-image: 
+    linear-gradient(to right, rgba(0, 180, 216, 0.08) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(0, 180, 216, 0.08) 1px, transparent 1px);
+  background-size: 40px 30px;
+  transform: perspective(300px) rotateX(60deg) translateY(-20px);
+  transform-origin: top center;
+  pointer-events: none;
+  opacity: 0.7;
+}
+
+.style_analytics_controls__7MWoC {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  justify-content: flex-end;
+  gap: 0.75rem;
+}
+
+.style_analytics_select__9dxJ2 {
+  background-color: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  border-radius: 0.5rem;
+  padding: 0.375rem 0.875rem;
+  font-size: 0.75rem;
+  outline: none;
+  cursor: pointer;
+  transition: border-color 0.2s;
+}
+
+.style_analytics_select__9dxJ2:hover {
+  border-color: rgba(255, 255, 255, 0.4);
+}
+
+.style_analytics_select__9dxJ2 option {
+  background-color: #132246;
+  color: #ffffff;
+}
+
+/* أعمدة الرسم البياني */
+.style_analytics_barsContainer__0qzGT {
+  position: relative;
+  z-index: 2;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  gap: 0.75rem;
+  height: 200px;
+  width: 100%;
+  padding-top: 2rem;
+}
+
+.style_analytics_barItem__vz7MV {
+  position: relative;
+  flex: 1;
+  background-color: rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem 0.75rem 0 0;
+  transition: height 0.3s ease, background-color 0.2s ease;
+  cursor: pointer;
+}
+
+.style_analytics_barItem__vz7MV:hover {
+  background-color: rgba(255, 255, 255, 0.15);
+}
+
+/* الشريط النشط (Active/Today) */
+.style_analytics_barActive__sgTDM {
+  background-color: #2563eb !important;
+  box-shadow: 0 0 20px rgba(37, 99, 235, 0.4);
+}
+
+/* الوسم العائم المعلق فوق الشريط النشط */
+.style_analytics_tooltip__pcy8s {
+  position: absolute;
+  top: -2.25rem;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #2563eb;
+  color: #ffffff;
+  font-size: 0.7rem;
+  font-weight: 600;
+  padding: 0.25rem 0.625rem;
+  border-radius: 0.375rem;
+  white-space: nowrap;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3);
+}
+
+/* /////////////////////// DraftBanner.module.css /////////////////////// */
+
+.style_draftBanner_container__v_4f2 {
+  width: 100%;
+  background-color: #132246;
+  color: #ffffff;
+  padding: 0.75rem 1.25rem;
+  border-radius: 0.5rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 1.5rem;
+}
+
+.style_draftBanner_info__F1esZ {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.style_draftBanner_dot__DIrQV {
+  width: 8px;
+  height: 8px;
+  background-color: #ffffff;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.style_draftBanner_badge__oL_aQ {
+  font-weight: 700;
+  text-transform: capitalize;
+}
+
+.style_draftBanner_route___Kagq {
+  font-weight: 600;
+}
+
+.style_draftBanner_divider__GbFB8 {
+  opacity: 0.3;
+  margin: 0 0.25rem;
+}
+
+.style_draftBanner_vehicle__VbvPk {
+  color: #cbd5e1;
+}
+
+.style_draftBanner_btn__lJLYL {
+  background-color: #ffffff;
+  color: #132246;
+  border: none;
+  border-radius: 0.375rem;
+  padding: 0.5rem 1rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+  transition: opacity 0.2s;
+}
+
+.style_draftBanner_btn__lJLYL:hover {
+  opacity: 0.9;
+}
+
+/* /////////////////////////// StatCard.module.css /////////////////////////// */
+
+.style_statCard_card__xMexi {
+  background-color: var(--color-brand-50, #f2f5fb);
+  border: 1px solid var(--color-slate-200, #cbd5e1);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  min-width: 200px;
+}
+
+.style_statCard_title__GUJOb {
+  font-size: 0.875rem;
+  font-weight: 600;
+  color: #475569;
+  margin: 0 0 0.5rem 0;
+}
+
+.style_statCard_value__x1L7O {
+  font-size: 2rem;
+  font-weight: 700;
+  color: #0f172a;
+  margin-bottom: 0.75rem;
+  line-height: 1;
+}
+
+.style_statCard_footer__dU257 {
+  border-top: 1px solid #cbd5e1;
+  padding-top: 0.625rem;
+  font-size: 0.75rem;
+  color: #64748b;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.style_statCard_highlight___UBkl {
+  font-weight: 700;
+  color: #16a34a;
+}
+
+/* //////////////// RequestDetailsPanel.module.css //////////////// */
+
+.style_details_container__i7LBq {
+  background-color: #111827;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  color: #f8fafc;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.style_details_grid__ggu0p {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 1.25rem;
+}
+
+.style_details_leftCol__hGl0c {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.style_details_rightCol__ztuXG {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.style_details_card__PlS4T {
+  background-color: #1a233a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.75rem;
+  padding: 1.25rem;
+}
+
+.style_details_cardTitle__cWYVD {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  margin: 0 0 1rem 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+  padding-bottom: 0.5rem;
+}
+
+.style_details_sectionSub__n2MAj {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin: 0.75rem 0 0.5rem 0;
+  text-transform: uppercase;
+}
+
+.style_details_row__rDcEs {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 0.8rem;
+  padding: 0.25rem 0;
+  color: #cbd5e1;
+}
+
+.style_details_rowLabel__W4poQ {
+  color: #64748b;
+}
+
+.style_details_rowValue__SD2X_ {
+  font-weight: 600;
+  color: #ffffff;
+  text-align: right;
+}
+
+/* الخط الزمني Timeline */
+.style_timeline_list__49Bpa {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  position: relative;
+  padding-left: 1.25rem;
+}
+
+.style_timeline_list__49Bpa::before {
+  content: '';
+  position: absolute;
+  left: 6px;
+  top: 6px;
+  bottom: 6px;
+  width: 2px;
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.style_timeline_item__wDiLW {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+}
+
+.style_timeline_dot__6wqvO {
+  position: absolute;
+  left: -1.25rem;
+  top: 4px;
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #475569;
+}
+
+.style_timeline_dotCompleted__BMemE {
+  background-color: #16a34a;
+  box-shadow: 0 0 8px rgba(22, 163, 74, 0.5);
+}
+
+.style_timeline_title__4WfIu {
+  font-size: 0.8rem;
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.style_timeline_date__iGv1y {
+  font-size: 0.7rem;
+  color: #64748b;
+}
+
+/* شريط الإجراءات السفلية */
+.style_details_footer__pcUFP {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 1rem;
+}
+
+.style_details_actionGroup__rTAzi {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.style_btn_outline__Hnorm {
+  background: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  color: #ffffff;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.style_btn_danger__UVw_m {
+  background-color: rgba(239, 68, 68, 0.15);
+  border: 1px solid #ef4444;
+  color: #ef4444;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.style_btn_white__0OxwJ {
+  background-color: #ffffff;
+  color: #0f172a;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-size: 0.75rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+/* packages/ui/src/components/DataTable/DataTable.module.css */
+
+/* خلفية الصف النشط عند التوسيع */
+.style_dataTable_trExpanded__DxHAy {
+  background-color: #1a233a !important;
+  border-bottom: none !important;
+}
+
+/* الخلية الحاوية للتفاصيل الممتدة */
+.style_dataTable_expandedTd__Um59A {
+  padding: 0 !important;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08) !important;
+  background-color: #0f172a;
+}
+
+/* الحاوية ذات الانيميشن السلس (CSS Grid Transition) */
+.style_dataTable_accordionWrapper__Snk35 {
+  display: grid;
+  grid-template-rows: 0fr;
+  transition: grid-template-rows 0.35s cubic-bezier(0.4, 0, 0.2, 1);
+  overflow: hidden;
+}
+
+.style_dataTable_accordionWrapperExpanded__2XLbc {
+  grid-template-rows: 1fr;
+}
+
+/* العنصر الداخلي لحساب الارتفاع تلقائياً */
+.style_dataTable_accordionInner__iBu4l {
+  min-height: 0;
+  overflow: hidden;
+  padding: 0;
+  opacity: 0;
+  transform: translateY(-8px);
+  transition: opacity 0.3s ease, transform 0.3s ease, padding 0.3s ease;
+}
+
+.style_dataTable_accordionWrapperExpanded__2XLbc .style_dataTable_accordionInner__iBu4l {
+  padding: 1.25rem;
+  opacity: 1;
+  transform: translateY(0);
+}

@@ -1,0 +1,9 @@
+packages:
+  - "apps/*"
+  - "packages/platform/*"
+  - "packages/domains/*"
+  - "packages/workflows"
+allowBuilds:
+  '@parcel/watcher': false
+  '@swc/core': false
+  unrs-resolver: false

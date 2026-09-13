@@ -1,0 +1,39 @@
+/* apps/company/app/[locale]/_components/TripRequestsHeader/TripRequestsHeader.module.css */
+
+.header_container {
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.header_date {
+  font-size: 0.75rem;
+  color: #64748b;
+  margin-bottom: 0.25rem;
+}
+
+.header_topRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 1.5rem;
+}
+
+.header_title {
+  font-size: 2rem;
+  font-weight: 800;
+  color: #132246;
+  margin: 0 0 0.25rem 0;
+}
+
+.header_subtitle {
+  font-size: 0.875rem;
+  color: #64748b;
+  margin: 0;
+}
+
+.header_grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  width: 100%;
+}

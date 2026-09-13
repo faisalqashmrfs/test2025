@@ -1,0 +1,30 @@
+{
+  "name": "driver",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NEXT_IGNORE_INCORRECT_LOCKFILE=1 next dev -p 3002",
+    "build": "next build",
+    "start": "next start -p 3002",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@xcarbox/api": "workspace:*",
+    "@xcarbox/auth": "workspace:*",
+    "@xcarbox/cars": "workspace:*",
+    "@xcarbox/contracts": "workspace:*",
+    "@xcarbox/i18n": "workspace:*",
+    "@xcarbox/ui": "workspace:*",
+    "next": "^14.2.0",
+    "next-intl": "^4.13.7",
+    "react": "^18.3.0",
+    "react-dom": "^18.3.0"
+  },
+  "devDependencies": {
+    "@types/node": "^20.0.0",
+    "@types/react": "^18.3.0",
+    "@types/react-dom": "^18.3.0",
+    "cross-env": "^7.0.3",
+    "typescript": "^5.0.0"
+  }
+}

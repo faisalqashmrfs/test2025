@@ -1,0 +1,95 @@
+:root {
+
+   /* ==========================================================================
+     0. Typography Tokens (الخطوط)
+     ========================================================================== */
+  --font-family-base: var(--font-montserrat), sans-serif;
+
+  /* ==========================================================================
+     1. Primitive Colors (الألوان الخام المأخوذة مباشرة من فيغما)
+     ========================================================================== */
+
+  /* Brand Blue Palette */
+  --color-brand-50:  #F2F5FB;
+  --color-brand-100: #E0E8F5;
+  --color-brand-200: #C1D1E9;
+  --color-brand-300: #9CB6DA;
+  --color-brand-400: #7095C6;
+  --color-brand-500: #132246;
+  --color-brand-600: #101D3C;
+  --color-brand-700: #0C162D;
+  --color-brand-800: #080E1D;
+  --color-brand-900: #04070F;
+
+  /* Brand Ice Grey (Slate) Palette */
+  --color-slate-50:  #F8FAFC;
+  --color-slate-100: #F1F5F9;
+  --color-slate-200: #D5DBE3;
+  --color-slate-300: #CBD5E1;
+  --color-slate-400: #B8C0CC;
+  --color-slate-500: #64748B;
+  --color-slate-600: #475569;
+  --color-slate-700: #334155;
+  --color-slate-800: #1E293B;
+  --color-slate-900: #0F172A;
+
+  /* Status Primitives */
+  --status-success-bg-raw:   #DCFCE7;
+  --status-success-text-raw: #166534;
+
+  --status-warning-bg-raw:   #FEF3C7;
+  --status-warning-text-raw: #92400E;
+
+  --status-error-bg-raw:     #FEE2E2;
+  --status-error-text-raw:   #991B1B;
+
+  --status-info-bg-raw:      #DBEAFE;
+  --status-info-text-raw:    #1E40AF;
+
+
+  /* ==========================================================================
+     2. Semantic Tokens (الألوان الوظيفية للتطبيق)
+     ========================================================================== */
+
+  /* Brand & Interactive States */
+  --color-primary:          var(--color-brand-500); /* اللون الرئيسي للمشروع */
+  --color-primary-hover:    var(--color-brand-600); /* عند تحريك الماوس */
+  --color-primary-active:   var(--color-brand-700); /* عند النقر */
+  --color-primary-light:    var(--color-brand-50);
+
+  /* Backgrounds & Surfaces */
+  --color-bg-main:           var(--color-slate-50);
+  --color-bg-card:           #FFFFFF;
+  --color-bg-inactive:       var(--color-slate-100);
+  --color-bg-dark:           var(--color-brand-800);
+
+  /* Typography (النصوص) */
+  --color-text-main:        var(--color-slate-900);
+  --color-text-muted:       var(--color-slate-500);
+  --color-text-inverse:     #FFFFFF;
+
+  /* Borders & Boundaries */
+  --color-border:           var(--color-slate-200);
+  --color-border-hover:     var(--color-brand-400);
+
+  /* Status Colors (الحالات) */
+  --color-success-bg:       var(--status-success-bg-raw);
+  --color-success-text:     var(--status-success-text-raw);
+
+  --color-warning-bg:       var(--status-warning-bg-raw);
+  --color-warning-text:     var(--status-warning-text-raw);
+
+  --color-danger-bg:        var(--status-error-bg-raw);
+  --color-danger-text:      var(--status-error-text-raw);
+
+  --color-info-bg:          var(--status-info-bg-raw);
+  --color-info-text:        var(--status-info-text-raw);
+}
+
+body {
+  font-family: var(--font-family-base);
+}
+
+input, button, textarea, select {
+  font-family: var(--font-family-base);
+}

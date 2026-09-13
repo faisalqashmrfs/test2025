@@ -1,0 +1,36 @@
+/* apps/company/app/[locale]/_components/TripsAnalytics/TripsAnalytics.module.css */
+
+.tripsAnalytics_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.tripsAnalytics_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.tripsAnalytics_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+  margin: 0;
+}
+
+.tripsAnalytics_viewAll {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-slate-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.tripsAnalytics_viewAll:hover {
+  color: var(--color-brand-500);
+}

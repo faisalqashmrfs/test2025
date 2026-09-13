@@ -1,0 +1,63 @@
+{
+  "pages": {
+    "/[locale]/settings/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/settings/page.css",
+      "static/chunks/app/[locale]/settings/page.js"
+    ],
+    "/[locale]/layout": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/layout.css",
+      "static/chunks/app/[locale]/layout.js"
+    ],
+    "/[locale]/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/page.css",
+      "static/chunks/app/[locale]/page.js"
+    ],
+    "/[locale]/team-members/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/team-members/page.css",
+      "static/chunks/app/[locale]/team-members/page.js"
+    ],
+    "/[locale]/guide/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/guide/page.css",
+      "static/chunks/app/[locale]/guide/page.js"
+    ],
+    "/[locale]/analytics/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/chunks/app/[locale]/analytics/page.js"
+    ],
+    "/[locale]/driver-map/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/driver-map/page.css",
+      "static/chunks/app/[locale]/driver-map/page.js"
+    ],
+    "/[locale]/invoices/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/invoices/page.css",
+      "static/chunks/app/[locale]/invoices/page.js"
+    ],
+    "/[locale]/offers/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/offers/page.css",
+      "static/chunks/app/[locale]/offers/page.js"
+    ],
+    "/[locale]/trip-requests/page": [
+      "static/chunks/webpack.js",
+      "static/chunks/main-app.js",
+      "static/css/app/[locale]/trip-requests/page.css",
+      "static/chunks/app/[locale]/trip-requests/page.js"
+    ]
+  }
+}

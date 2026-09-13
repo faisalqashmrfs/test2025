@@ -1,0 +1,29 @@
+/* apps/company/app/[locale]/_components/QuickActions/QuickActions.module.css */
+
+.quickActions_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.quickActions_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+  margin: 0;
+}
+
+.quickActions_flexWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.quickActions_buttonItem {
+  flex: 1 1 calc(33.333% - 0.85rem);
+  min-width: 240px;
+}

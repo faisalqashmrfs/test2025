@@ -1,0 +1,163 @@
+{
+  "sidebar": {
+    "overview": "Overview",
+    "tripRequests": "Trip Requests",
+    "offers": "Offers",
+    "invoices": "Invoices",
+    "driverMap": "Driver Map",
+    "analytics": "Analytics",
+    "guide": "Guide",
+    "teamMembers": "Team Members",
+    "settings": "Settings"
+  },
+  "overview": {
+    "greeting": "Good Morning",
+    "verified": "VERIFIED",
+    "activeRequests": "ACTIVE REQUESTS",
+    "awaitingAssignment": "Awaiting Assignment",
+    "pendingOffers": "PENDING OFFERS",
+    "newSinceYesterday": "New Since Yesterday",
+    "totalSpent": "TOTAL SPENT",
+    "thisMonth": "This Month",
+    "completedTrips": "COMPLETED TRIPS",
+    "youHave": "You have",
+    "active": "active",
+    "requestsAnd": "requests and",
+    "offers": "offers",
+    "awaitingReview": "awaiting your review",
+    "recentOffers": "Recent Offers",
+    "viewAll": "View All",
+    "pickupAt": "Pickup at:",
+    "deliveryAt": "Delivery at:",
+    "offerExpireIn": "Offer Expire in:",
+    "priceOffer": "Price Offer:",
+    "accept": "ACCEPT",
+    "reject": "REJECT",
+    "quickActions": "Quick Actions",
+    "startNewRequest": "START NEW REQUEST",
+    "inviteTeamMember": "INVITE TEAM MEMBER",
+    "viewAllNewOffers": "VIEW ALL NEW OFFERS",
+    "recentActiveTrips": "Recent ACTIVE Trips",
+    "offerId": "Offer ID",
+    "driverName": "Driver Name",
+    "pickupLocation": "Pickup Location & Date",
+    "deliveryLocation": "Delivery Location & Date",
+    "vehicleModel": "Vehicle Model & Type",
+    "transportType": "Transport Type",
+    "state": "State",
+    "action": "Action",
+    "showingTripsText": "Showing 10 of 42 requests"
+  },
+  "tripRequests": {
+    "draft": "Draft",
+    "completeRequest": "COMPLETE REQUEST",
+    "myRequests": "My Requests",
+    "subtitle": "Manage active and pending high-value vehicle shipments.",
+    "newRequest": "NEW REQUEST",
+    "totalRequests": "Total Requests",
+    "totalRequestsSub": "The All Trips In All States",
+    "pending": "Pending",
+    "pendingSub": "This Trips Waiting For Drivers",
+    "inTransit": "In Transit",
+    "arrivingToday": "Arriving Today",
+    "delivered": "Delivered",
+    "thisMonth": "This Month"
+  },
+  "newTripRequest": {
+    "tripType": {
+      "transportTypeTitle": "Transport Type",
+      "tripTypeTitle": "Trip Type",
+      "required": "required",
+      "driven": "Driven",
+      "carrier": "Carrier / LKW",
+      "oneWay": "One Way",
+      "roundTrip": "Round Trip",
+      "multiTrip": "Multi Trip"
+    },
+    "vehicle": {
+      "title": "Vehicle",
+      "subtitle": "Add all vehicles included in this request",
+      "counterSuffix": "vehicle added",
+      "of": "of",
+      "carType": "Car Type",
+      "carModel": "Car Model",
+      "transmissionType": "Transmission Type",
+      "additionalInstruction": "Additional Instruction",
+      "instructionHint": "you can choose more than one option",
+      "specialNotes": "Special Notes",
+      "required": "required",
+      "duplicate": "Duplicate 📑",
+      "remove": "Remove 🗑️",
+      "addOtherVehicle": "Add Other Vehicle",
+      "carTypes": {
+        "sedan": "Sedan / Coupe",
+        "suv": "SUV / Crossover",
+        "van": "Van / Pickup",
+        "luxury": "Luxury / Classic",
+        "sports": "Sports",
+        "other": "Other"
+      },
+      "carModels": {
+        "volkswagen": "Volkswagen",
+        "toyota": "Toyota",
+        "bmw": "BMW",
+        "mercedes": "Mercedes",
+        "hyundai": "Hyundai",
+        "tesla": "Tesla",
+        "peugeot": "Peugeot",
+        "other": "Other"
+      },
+      "transmissions": {
+        "manual": "Manual",
+        "automatic": "Automatic"
+      },
+      "instructions": {
+        "wash": "Vehicle Wash Requested",
+        "callBefore": "Call Before Delivery",
+        "ev": "Electric Vehicle (EV)",
+        "nightBox": "Night Box at Delivery",
+        "redPlate": "Red Plate",
+        "refuel": "Refuel Before Delivery"
+      },
+      "specialNotesOptions": {
+        "doc1": "Note Document 1",
+        "doc2": "Note Document 2",
+        "other": "Other"
+      }
+    },
+    "photoAndDriver": {
+      "photoTitle": "Take Photo Protocol Bundle",
+      "required": "required",
+      "driverTitle": "Driver Assignment:",
+      "assignLabel": "Assign to Driver",
+      "statusOn": "On",
+      "statusOff": "Off",
+      "driverCalloutTitle": "callout:",
+      "driverCalloutText": "Turn on to assign this trip directly to a specific driver you have already agreed.",
+      "continueBtn": "CONTINUE ->",
+      "saveDraftBtn": "SAVE AS DRAFT 🔖",
+      "bundles": {
+        "basic": {
+          "label": "Basic",
+          "title": "4 Photos",
+          "text": "you choose the basic bundle this bundle have 4 photo for four-angle exterior coverage: ( front, rear, and both sides. )"
+        },
+        "standard": {
+          "label": "Standard",
+          "title": "8 Photos",
+          "text": "you choose the standard bundle this bundle has 8 photos for full exterior and wheels coverage."
+        },
+        "full": {
+          "label": "Full",
+          "title": "12 Photos",
+          "text": "you choose the full bundle this bundle has 12 photos for detailed interior and exterior coverage."
+        },
+        "premium": {
+          "label": "Premium",
+          "title": "16+ Photos",
+          "text": "you choose the premium bundle offering complete end-to-end photo documentation."
+        }
+      }
+    }
+  }
+}

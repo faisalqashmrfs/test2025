@@ -1,0 +1,14 @@
+{
+  "$schema": "https://json.schemastore.org/package.json",
+  "name": "@xcarbox/auth",
+  "version": "0.0.1",
+  "private": true,
+  "main": "./index.ts",
+  "types": "./index.ts",
+  "scripts": {
+    "lint": "echo 'auth lint'"
+  },
+  "dependencies": {
+    "@xcarbox/contracts": "workspace:*"
+  }
+}

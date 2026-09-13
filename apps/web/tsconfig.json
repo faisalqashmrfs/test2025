@@ -1,0 +1,25 @@
+{
+  "extends": "../../tsconfig.json",
+  "compilerOptions": {
+    "plugins": [
+      {
+        "name": "next"
+      }
+    ],
+    "paths": {
+      "@/*": ["./*"],
+      "@xcarbox/ui": ["../../packages/platform/ui/src/index.ts"],
+      "@xcarbox/cars": ["../../packages/domains/cars/src/index.ts"],
+      "@xcarbox/checkout": ["../../packages/workflows/checkout/src/index.ts"]
+    }
+  },
+  "include": [
+    "next-env.d.ts",
+    "**/*.ts",
+    "**/*.tsx",
+    ".next/types/**/*.ts"
+  ],
+  "exclude": [
+    "node_modules"
+  ]
+}

@@ -1,0 +1,125 @@
+/* apps/company/app/[locale]/_components/OverviewHeader/OverviewHeader.module.css */
+
+.overviewHeader_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  margin-bottom: 2rem;
+  width: 100%;
+}
+
+.overviewHeader_topMeta {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-size: 0.8125rem;
+  color: var(--color-slate-500);
+}
+
+.overviewHeader_verifiedBadge {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.25rem;
+  padding: 0.2rem 0.6rem;
+  border-radius: 9999px;
+  border: 1px solid #22c55e;
+  color: #16a34a;
+  background-color: rgba(34, 197, 94, 0.08);
+  font-size: 0.7rem;
+  font-weight: 700;
+  letter-spacing: 0.05em;
+}
+
+.overviewHeader_mainTitle {
+  font-size: 2.25rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+  margin: 0.25rem 0 0.5rem 0;
+}
+
+.overviewHeader_subtitle {
+  font-size: 0.9375rem;
+  color: var(--color-slate-600);
+  margin: 0;
+}
+
+.overviewHeader_highlightActive {
+  color: #2563eb;
+  font-weight: 600;
+}
+
+.overviewHeader_highlightOffers {
+  color: #d97706;
+  font-weight: 600;
+}
+
+/* Flexbox Wrapper */
+.overviewHeader_statsFlexWrapper {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 1.25rem;
+  width: 100%;
+}
+
+.overviewHeader_statCard {
+  flex: 1 1 calc(25% - 1rem);
+  min-width: 220px;
+  background-color: var(--color-brand-50, #f2f5fb);
+  border: 1px solid var(--color-slate-300, #cbd5e1);
+  border-radius: 0.875rem;
+  padding: 1.25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.overviewHeader_statCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.04);
+}
+
+.overviewHeader_cardTop {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 0.75rem;
+}
+
+.overviewHeader_cardTitle {
+  font-size: 0.75rem;
+  font-weight: 700;
+  color: var(--color-slate-700);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+}
+
+.overviewHeader_externalIcon {
+  color: var(--color-slate-400);
+}
+
+.overviewHeader_cardValue {
+  font-size: 1.75rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+  margin-bottom: 1rem;
+}
+
+.overviewHeader_divider {
+  height: 1px;
+  background-color: var(--color-slate-300);
+  border: none;
+  margin: 0 0 0.75rem 0;
+}
+
+.overviewHeader_cardFooter {
+  font-size: 0.8125rem;
+  color: var(--color-slate-500);
+}
+
+.overviewHeader_footerHighlight {
+  color: #16a34a;
+  font-weight: 600;
+  margin-right: 0.25rem;
+}

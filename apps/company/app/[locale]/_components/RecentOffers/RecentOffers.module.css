@@ -1,0 +1,46 @@
+/* apps/company/app/[locale]/_components/RecentOffers/RecentOffers.module.css */
+
+.recentOffers_section {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  width: 100%;
+  margin-bottom: 2rem;
+}
+
+.recentOffers_header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.recentOffers_title {
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: var(--color-brand-500, #132246);
+  margin: 0;
+}
+
+.recentOffers_viewAll {
+  display: flex;
+  align-items: center;
+  gap: 0.25rem;
+  font-size: 0.875rem;
+  color: var(--color-slate-500);
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.recentOffers_viewAll:hover {
+  color: var(--color-brand-500);
+}
+
+/* Flexbox horizontal scroll container for cards */
+.recentOffers_flexList {
+  display: flex;
+  flex-direction: row;
+  gap: 1.25rem;
+  overflow-x: auto;
+  padding-bottom: 0.5rem;
+  width: 100%;
+}

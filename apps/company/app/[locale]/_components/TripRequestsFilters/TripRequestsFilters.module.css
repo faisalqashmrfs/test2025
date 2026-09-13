@@ -1,0 +1,101 @@
+/* apps/company/app/[locale]/_components/TripRequestsFilters/TripRequestsFilters.module.css */
+
+.filters_container {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  width: 100%;
+  margin-bottom: 1.25rem;
+}
+
+/* شريط التبويبات العلوية (Tabs Bar) */
+.filters_tabsRow {
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  padding-bottom: 0.75rem;
+  overflow-x: auto;
+}
+
+.filters_tabBtn {
+  background: transparent;
+  border: none;
+  color: #64748b;
+  font-size: 0.875rem;
+  font-weight: 700;
+  cursor: pointer;
+  padding: 0.25rem 0;
+  position: relative;
+  transition: color 0.2s ease;
+  white-space: nowrap;
+}
+
+.filters_tabBtn:hover {
+  color: #94a3b8;
+}
+
+/* التبويب النشط */
+.filters_tabActive {
+  color: #ffffff !important;
+}
+
+.filters_tabActive::after {
+  content: '';
+  position: absolute;
+  bottom: -0.8rem;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background-color: #ffffff;
+  border-radius: 2px;
+}
+
+/* شبكة حقول التصفية والمدخلات (Filter Inputs Grid) */
+.filters_inputsGrid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 0.75rem;
+  width: 100%;
+}
+
+.filters_input,
+.filters_select {
+  background-color: #1a233a;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.875rem;
+  color: #cbd5e1;
+  font-size: 0.8rem;
+  outline: none;
+  width: 100%;
+  transition: border-color 0.2s ease, background-color 0.2s ease;
+}
+
+.filters_input::placeholder {
+  color: #64748b;
+}
+
+.filters_input:focus,
+.filters_select:focus {
+  border-color: #2563eb;
+  background-color: #1e293b;
+}
+
+.filters_select option {
+  background-color: #132246;
+  color: #ffffff;
+}
+
+/* للتجاوب مع الشاشات الصغيرة */
+@media (max-width: 1024px) {
+  .filters_inputsGrid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 640px) {
+  .filters_inputsGrid {
+    grid-template-columns: 1fr;
+  }
+}

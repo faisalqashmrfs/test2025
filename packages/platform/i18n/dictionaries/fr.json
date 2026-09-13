@@ -1,0 +1,170 @@
+{
+  "sidebar": {
+    "overview": "Aperçu",
+    "tripRequests": "Demandes de trajet",
+    "offers": "Offres",
+    "invoices": "Factures",
+    "driverMap": "Carte des chauffeurs",
+    "analytics": "Analytiques",
+    "guide": "Guide",
+    "teamMembers": "Membres de l'équipe",
+    "settings": "Paramètres"
+  },
+  "overview": {
+    "greeting": "Bonjour",
+    "verified": "VÉRIFIÉ",
+    "activeRequests": "DEMANDES ACTIVES",
+    "awaitingAssignment": "En attente d'attribution",
+    "pendingOffers": "OFFRES EN ATTENTE",
+    "newSinceYesterday": "Nouveau depuis hier",
+    "totalSpent": "TOTAL DÉPENSÉ",
+    "thisMonth": "Ce mois-ci",
+    "completedTrips": "TRAJETS TERMINÉS",
+    "youHave": "Vous avez",
+    "active": "actives",
+    "requestsAnd": "demandes et",
+    "offers": "offres",
+    "awaitingReview": "en attente de votre examen",
+    "recentOffers": "Offres récentes",
+    "viewAll": "Tout afficher",
+    "pickupAt": "Enlèvement à :",
+    "deliveryAt": "Livraison à :",
+    "offerExpireIn": "L'offre expire dans :",
+    "priceOffer": "Offre de prix :",
+    "accept": "ACCEPTER",
+    "reject": "REFUSER",
+    "quickActions": "Actions rapides",
+    "startNewRequest": "COMMENCER UNE NOUVELLE DEMANDE",
+    "inviteTeamMember": "INVITER UN MEMBRE DE L'ÉQUIPE",
+    "viewAllNewOffers": "VOIR TOUTES LES NOUVELLES OFFRES",
+    "recentActiveTrips": "Trajets ACTIFS récents",
+    "offerId": "ID de l'offre",
+    "driverName": "Nom du chauffeur",
+    "pickupLocation": "Lieu & date d'enlèvement",
+    "deliveryLocation": "Lieu & date de livraison",
+    "vehicleModel": "Modèle & type de véhicule",
+    "transportType": "Type de transport",
+    "state": "État",
+    "action": "Action",
+    "showingTripsText": "Affichage de 10 sur 42 demandes",
+    "tripsAnalytics": "Analytiques des trajets",
+    "todayLabel": "Vendredi (Aujourd'hui)",
+    "allRegions": "Toutes les régions",
+    "europe": "Europe",
+    "america": "Amérique du Nord",
+    "thisWeek": "Cette semaine",
+    "thisYear": "Cette année"
+  },
+  "tripRequests": {
+    "draft": "Brouillon",
+    "completeRequest": "COMPLÉTER LA DEMANDE",
+    "myRequests": "Mes demandes",
+    "subtitle": "Gérer les expéditions de véhicules de haute valeur actives et en attente.",
+    "newRequest": "NOUVELLE DEMANDE",
+    "totalRequests": "Total des demandes",
+    "totalRequestsSub": "Tous les trajets dans tous les états",
+    "pending": "En attente",
+    "pendingSub": "Trajets en attente de chauffeurs",
+    "inTransit": "En transit",
+    "arrivingToday": "Arrivent aujourd'hui",
+    "delivered": "Livrés",
+    "thisMonth": "Ce mois-ci"
+  },
+  "newTripRequest": {
+    "tripType": {
+      "transportTypeTitle": "Type de Transport",
+      "tripTypeTitle": "Type de Trajet",
+      "required": "requis",
+      "driven": "Conduit",
+      "carrier": "Transporteur / LKW",
+      "oneWay": "Aller simple",
+      "roundTrip": "Aller-retour",
+      "multiTrip": "Trajets multiples"
+    },
+    "vehicle": {
+      "title": "Véhicule",
+      "subtitle": "Ajoutez tous les véhicules inclus dans cette demande",
+      "counterSuffix": "véhicule ajouté",
+      "of": "sur",
+      "carType": "Type de voiture",
+      "carModel": "Modèle de voiture",
+      "transmissionType": "Type de transmission",
+      "additionalInstruction": "Instructions supplémentaires",
+      "instructionHint": "vous pouvez choisir plusieurs options",
+      "specialNotes": "Notes spéciales",
+      "required": "requis",
+      "duplicate": "Dupliquer 📑",
+      "remove": "Supprimer 🗑️",
+      "addOtherVehicle": "Ajouter un autre véhicule",
+      "carTypes": {
+        "sedan": "Berline / Coupé",
+        "suv": "SUV / Crossover",
+        "van": "Camionnette / Pick-up",
+        "luxury": "Luxe / Classique",
+        "sports": "Sportive",
+        "other": "Autre"
+      },
+      "carModels": {
+        "volkswagen": "Volkswagen",
+        "toyota": "Toyota",
+        "bmw": "BMW",
+        "mercedes": "Mercedes",
+        "hyundai": "Hyundai",
+        "tesla": "Tesla",
+        "peugeot": "Peugeot",
+        "other": "Autre"
+      },
+      "transmissions": {
+        "manual": "Manuelle",
+        "automatic": "Automatique"
+      },
+      "instructions": {
+        "wash": "Lavage du véhicule demandé",
+        "callBefore": "Appeler avant la livraison",
+        "ev": "Véhicule électrique (VE)",
+        "nightBox": "Boîte de nuit à la livraison",
+        "redPlate": "Plaque rouge",
+        "refuel": "Faire le plein avant la livraison"
+      },
+      "specialNotesOptions": {
+        "doc1": "Document de note 1",
+        "doc2": "Document de note 2",
+        "other": "Autre"
+      }
+    },
+    "photoAndDriver": {
+      "photoTitle": "Pack de Protocole Photo",
+      "required": "requis",
+      "driverTitle": "Attribution du chauffeur :",
+      "assignLabel": "Attribuer à un chauffeur",
+      "statusOn": "Activé",
+      "statusOff": "Désactivé",
+      "driverCalloutTitle": "Remarque :",
+      "driverCalloutText": "Activez pour attribuer ce trajet directement à un chauffeur spécifique déjà convenu.",
+      "continueBtn": "CONTINUER ->",
+      "saveDraftBtn": "ENREGISTRER COMME BROUILLON 🔖",
+      "bundles": {
+        "basic": {
+          "label": "De base",
+          "title": "4 Photos",
+          "text": "Vous avez choisi le pack de base. Il comprend 4 photos pour la couverture extérieure sous 4 angles (avant, arrière et les deux côtés)."
+        },
+        "standard": {
+          "label": "Standard",
+          "title": "8 Photos",
+          "text": "Vous avez choisi le pack standard. Il comprend 8 photos pour une couverture complète de l'extérieur et des roues."
+        },
+        "full": {
+          "label": "Complet",
+          "title": "12 Photos",
+          "text": "Vous avez choisi le pack complet. Il comprend 12 photos pour une couverture détaillée de l'intérieur et de l'extérieur."
+        },
+        "premium": {
+          "label": "Premium",
+          "title": "16+ Photos",
+          "text": "Vous avez choisi le pack premium offrant une documentation photo exhaustive."
+        }
+      }
+    }
+  }
+}

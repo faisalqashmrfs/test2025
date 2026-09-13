@@ -1,0 +1,615 @@
+.xcar-guide-container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  color: #1e293b;
+  font-family: inherit;
+  box-sizing: border-box;
+}
+
+/* ========================================================= */
+/* 1. Sticky Header & Top Tabs Navigation                    */
+/* ========================================================= */
+
+.xcar-sticky-header-wrapper {
+  position: sticky;
+  top: -50px;
+  z-index: 100;
+  background-color: #f9fafb;
+  padding: 16px 24px 0 24px;
+  border-bottom: 1px solid #94a3b8;
+  /* أضف هذا السطر لمنع تداخل الشفافية أثناء التمرير */
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.03); 
+}
+
+.xcar-header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 16px;
+}
+
+.xcar-date-subtitle {
+  font-size: 11px;
+  color: #64748b;
+  display: block;
+  margin-bottom: 4px;
+}
+
+.xcar-page-title {
+  font-size: 28px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 4px 0;
+}
+
+.xcar-page-desc {
+  font-size: 12.5px;
+  color: #475569;
+  margin: 0;
+}
+
+.xcar-download-btn {
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  font-size: 11px;
+  font-weight: 700;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  transition: opacity 0.2s ease;
+}
+
+.xcar-download-btn:hover {
+  opacity: 0.9;
+}
+
+/* Main Top Navigation Tabs */
+.xcar-tabs-nav {
+  display: flex;
+  gap: 32px;
+}
+
+.xcar-tab-btn {
+  background: transparent;
+  border: none;
+  font-size: 12px;
+  font-weight: 700;
+  color: #64748b;
+  cursor: pointer;
+  padding: 0 0 12px 0;
+  position: relative;
+  transition: color 0.2s ease;
+}
+
+.xcar-tab-btn:hover {
+  color: #0f172a;
+}
+
+.xcar-tab-btn--active {
+  color: #0f172a;
+}
+
+.xcar-tab-btn--active::after {
+  content: '';
+  position: absolute;
+  bottom: -1px;
+  left: 0;
+  right: 0;
+  height: 2.5px;
+  background-color: #0f172a;
+  border-radius: 2px 2px 0 0;
+}
+
+/* ========================================================= */
+/* 2. Layout (Sticky Sidebar + Scrollable Body)              */
+/* ========================================================= */
+
+.xcar-guide-layout {
+  display: grid;
+  grid-template-columns: 220px 1fr;
+  gap: 32px;
+  padding: 24px;
+  align-items: start;
+}
+
+/* Left Sticky Sidebar */
+.xcar-sidebar-nav {
+  position: sticky;
+  /* تم زيادة وتعديل القيمة إلى 160px ليبقى الـ Sidebar دائماً أسفل الشريط العلوي تماماً بدون أن يتداخل أو يختفي */
+  top: 160px; 
+  align-self: flex-start; /* سطر أساسي لمنع تمدد الشريحة الجانبية مع طول المحتوى */
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  z-index: 90;
+}
+
+.xcar-sidebar-title {
+  font-size: 11px;
+  color: #64748b;
+  font-weight: 600;
+}
+
+.xcar-section-links {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.xcar-section-link-btn {
+  background: transparent;
+  border: none;
+  text-align: left;
+  font-size: 12px;
+  font-weight: 500;
+  color: #64748b;
+  padding: 4px 0;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.xcar-section-link-btn:hover {
+  color: #0f172a;
+}
+
+.xcar-section-link-btn--active {
+  color: #0f172a;
+  font-weight: 800;
+}
+
+/* Right Content Stream */
+.xcar-content-stream {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+/* Hero Content */
+.xcar-welcome-title {
+  font-size: 22px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.xcar-welcome-desc {
+  font-size: 12.5px;
+  color: #475569;
+  line-height: 1.6;
+  margin: 0 0 20px 0;
+  max-width: 800px;
+}
+
+.xcar-brand-banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.xcar-divider {
+  border: none;
+  border-top: 1px solid #cbd5e1;
+  margin: 10px 0 20px 0;
+}
+
+/* Info Callout Box (European Expansion Protocol) */
+.xcar-info-callout {
+  background-color: #dbefe6;
+  border: 1px solid #93c5fd;
+  border-radius: 8px;
+  padding: 16px;
+  display: flex;
+  gap: 12px;
+  margin-bottom: 24px;
+}
+
+.xcar-callout-icon {
+  font-size: 18px;
+  color: #1d4ed8;
+}
+
+.xcar-callout-title {
+  font-size: 15px;
+  font-weight: 800;
+  color: #1e3a8a;
+  margin: 0 0 6px 0;
+}
+
+.xcar-callout-text {
+  font-size: 11.5px;
+  color: #3b82f6;
+  line-height: 1.5;
+  margin: 0;
+}
+
+/* Sections */
+.xcar-guide-section {
+  scroll-margin-top: 200px; /* للضبط الدقيق عند الضغط على الروابط */
+  margin-bottom: 40px;
+}
+
+.xcar-section-heading {
+  font-size: 18px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 8px 0;
+}
+
+.xcar-section-p {
+  font-size: 12px;
+  color: #475569;
+  margin: 0 0 12px 0;
+}
+
+.xcar-subheading {
+  font-size: 12px;
+  color: #64748b;
+  font-weight: 600;
+  margin: 12px 0;
+}
+
+/* Table Preview Header Header */
+.xcar-table-preview-head {
+  display: grid;
+  grid-template-columns: 1.5fr 2fr 2fr;
+  background-color: #e2e8f0;
+  border-radius: 6px 6px 0 0;
+  padding: 10px 16px;
+  font-size: 11px;
+  font-weight: 700;
+  color: #475569;
+}
+
+.xcar-tab-placeholder {
+  padding: 60px 0;
+  text-align: center;
+  color: #64748b;
+}
+
+/* ========================================================= */
+/* Platform Overview - Comparison Table Styling              */
+/* ========================================================= */
+
+.xcar-subheading-text {
+  font-size: 13px;
+  color: #64748b;
+  margin: 12px 0 16px 0;
+  font-weight: 500;
+}
+
+.xcar-table-card {
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid rgba(255, 255, 255, 0.4);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* Header Row */
+.xcar-table-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.4fr;
+  background-color: #d1dbe8; /* درجة الترويسة الرمادية/الزرقاء الفاتحة */
+  border-bottom: 1px solid #b0c0d4;
+}
+
+.xcar-th {
+  padding: 16px 20px;
+  font-size: 12px;
+  font-weight: 600;
+  color: #334155;
+  border-right: 1px solid #b0c0d4;
+  display: flex;
+  align-items: center;
+}
+
+.xcar-th:last-child {
+  border-right: none;
+}
+
+/* Body & Rows */
+.xcar-table-body {
+  display: flex;
+  flex-direction: column;
+  background-color: #334155; /* اللون الكحلي الداكن للخلفية */
+}
+
+.xcar-tr {
+  display: grid;
+  grid-template-columns: 1.2fr 1.4fr 1.4fr;
+  border-bottom: 1px solid #475569;
+}
+
+.xcar-tr:last-child {
+  border-bottom: none;
+}
+
+.xcar-td {
+  padding: 16px 20px;
+  font-size: 12px;
+  line-height: 1.5;
+  color: #e2e8f0;
+  border-right: 1px solid #475569;
+  display: flex;
+  align-items: center;
+}
+
+.xcar-td:last-child {
+  border-right: none;
+}
+
+/* First Column (Feature Titles) */
+.xcar-td-feature {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+/* ========================================================= */
+/* Account Setup - Stepper Timeline Styling                  */
+/* ========================================================= */
+
+.xcar-stepper-container {
+  display: flex;
+  flex-direction: column;
+  margin: 20px 0 28px 0;
+}
+
+.xcar-stepper-item {
+  display: flex;
+  gap: 16px;
+  position: relative;
+}
+
+.xcar-stepper-left {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.xcar-stepper-badge {
+  width: 26px;
+  height: 26px;
+  background-color: #1e293b; /* اللون الداكن للدوائر */
+  color: #ffffff;
+  border-radius: 50%;
+  font-size: 11px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 2;
+  flex-shrink: 0;
+}
+
+.xcar-stepper-line {
+  width: 2px;
+  background-color: #94a3b8; /* لون الخط العمودي الواصل */
+  flex-grow: 1;
+  margin: 4px 0;
+}
+
+.xcar-stepper-content {
+  padding-bottom: 24px;
+}
+
+.xcar-step-title {
+  font-size: 13px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 3px 0 6px 0;
+}
+
+.xcar-step-desc {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #64748b;
+  margin: 0;
+  max-width: 720px;
+}
+
+/* Warning Callout Box */
+.xcar-warning-callout {
+  background-color: #fce8e6; /* لون خلفية التحذير الوردي الفاتح */
+  border: 1px solid #f87171; /* إطار أحمر/وردي */
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+}
+
+.xcar-warning-icon {
+  font-size: 16px;
+  line-height: 1;
+  margin-top: 2px;
+}
+
+.xcar-warning-body {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.xcar-warning-title {
+  font-size: 12px;
+  font-weight: 800;
+  color: #b91c1c;
+  margin: 0;
+}
+
+.xcar-warning-text {
+  font-size: 11px;
+  color: #b91c1c;
+  line-height: 1.4;
+  margin: 0;
+}
+
+/* ========================================================= */
+/* Your First Request - Section Divider & Pro Tip Box        */
+/* ========================================================= */
+
+.xcar-section-divider {
+  border: none;
+  border-top: 1px solid #94a3b8;
+  margin: 32px 0;
+}
+
+/* Pro Tip Callout Box (Blue Outline & Light Blue Fill) */
+.xcar-protip-callout {
+  background-color: #e0eafd; /* خلفية زرقاء فاتحة جداً */
+  border: 1px solid #3b82f6; /* إطار أزرق متناسق */
+  border-radius: 8px;
+  padding: 14px 16px;
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 16px;
+}
+
+.xcar-protip-icon {
+  font-size: 16px;
+  color: #2563eb;
+  display: flex;
+  align-items: center;
+}
+
+.xcar-protip-body {
+  font-size: 11.5px;
+  line-height: 1.5;
+  color: #1e40af;
+}
+
+.xcar-protip-title {
+  font-weight: 800;
+  margin-right: 6px;
+}
+
+.xcar-protip-text {
+  font-weight: 400;
+}
+
+/* ========================================================= */
+/* Team & Roles - Table Grid Layout                          */
+/* ========================================================= */
+
+.xcar-roles-table-header {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 2fr;
+  background-color: #d1dbe8;
+  border-bottom: 1px solid #b0c0d4;
+}
+
+.xcar-roles-tr {
+  display: grid;
+  grid-template-columns: 1.2fr 1.1fr 2fr;
+  border-bottom: 1px solid #475569;
+}
+
+.xcar-roles-tr:last-child {
+  border-bottom: none;
+}
+
+
+/* ========================================================= */
+/* Success Tips - Pro Tip Cards Grid & CTA Section           */
+/* ========================================================= */
+
+.xcar-protip-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 16px;
+  margin-bottom: 36px;
+}
+
+.xcar-protip-card {
+  background-color: rgba(255, 255, 255, 0.45); /* خلفية مع شفافة بلورية */
+  border: 1px solid rgba(255, 255, 255, 0.7);
+  border-radius: 10px;
+  padding: 16px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  backdrop-filter: blur(4px);
+}
+
+.xcar-protip-card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.xcar-protip-card-title {
+  font-size: 14px;
+  font-weight: 700;
+  color: #1e293b;
+  margin: 0;
+}
+
+.xcar-protip-badge {
+  font-size: 9.5px;
+  font-weight: 800;
+  color: #1e293b;
+  letter-spacing: 0.5px;
+}
+
+.xcar-protip-card-desc {
+  font-size: 11px;
+  line-height: 1.5;
+  color: #475569;
+  margin: 0;
+}
+
+/* Download CTA Area */
+.xcar-download-cta-block {
+  margin-top: 24px;
+  display: flex;
+  flex-direction: column;
+}
+
+.xcar-cta-title {
+  font-size: 20px;
+  font-weight: 800;
+  color: #0f172a;
+  margin: 0 0 6px 0;
+}
+
+.xcar-cta-desc {
+  font-size: 12px;
+  color: #475569;
+  margin: 0 0 16px 0;
+}
+
+.xcar-cta-desc strong {
+  color: #0f172a;
+}
+
+.xcar-cta-download-btn {
+  width: 100%;
+  background-color: #0f172a;
+  color: #ffffff;
+  border: none;
+  border-radius: 8px;
+  padding: 14px 20px;
+  font-size: 13px;
+  font-weight: 800;
+  letter-spacing: 1px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  transition: opacity 0.2s ease, transform 0.1s ease;
+}
+
+.xcar-cta-download-btn:hover {
+  opacity: 0.92;
+}
+
+.xcar-cta-download-btn:active {
+  transform: scale(0.995);
+}
