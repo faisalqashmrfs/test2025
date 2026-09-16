@@ -12,50 +12,41 @@
       "static/css/app/[locale]/layout.css",
       "static/chunks/app/[locale]/layout.js"
     ],
-    "/[locale]/earnings/page": [
+    "/[locale]/loading": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/earnings/page.js"
+      "static/chunks/app/[locale]/loading.js"
     ],
     "/[locale]/trips/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
+      "static/css/app/[locale]/trips/page.css",
       "static/chunks/app/[locale]/trips/page.js"
     ],
-    "/[locale]/guide/page": [
+    "/[locale]/earnings/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/guide/page.js"
-    ],
-    "/[locale]/performance/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/performance/page.js"
-    ],
-    "/[locale]/my-team/page": [
-      "static/chunks/webpack.js",
-      "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/my-team/page.js"
+      "static/chunks/app/[locale]/earnings/page.js"
     ],
     "/[locale]/qualifications/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
       "static/chunks/app/[locale]/qualifications/page.js"
     ],
-    "/[locale]/settings/page": [
+    "/[locale]/performance/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/settings/page.js"
+      "static/chunks/app/[locale]/performance/page.js"
     ],
-    "/[locale]/preferences/page": [
+    "/[locale]/guide/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/preferences/page.js"
+      "static/chunks/app/[locale]/guide/page.js"
     ],
-    "/[locale]/support/page": [
+    "/[locale]/my-team/page": [
       "static/chunks/webpack.js",
       "static/chunks/main-app.js",
-      "static/chunks/app/[locale]/support/page.js"
+      "static/chunks/app/[locale]/my-team/page.js"
     ]
   }
 }
