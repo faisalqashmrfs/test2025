@@ -1,4 +1,4 @@
-// File: D:\مجلد جديد\import pro\xcarbox\apps\company\app\[locale]\team-members\page.tsx
+// File: C:\Users\Boss\Desktop\xcar\test2025\apps\company\app\[locale]\team-members\page.tsx
 import * as entry from '../../../../../app/[locale]/team-members/page.js'
 import type { ResolvingMetadata, ResolvingViewport } from 'next/dist/lib/metadata/types/metadata-interface.js'
 
