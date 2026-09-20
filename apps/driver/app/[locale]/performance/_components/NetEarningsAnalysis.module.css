@@ -1,0 +1,148 @@
+.container {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1rem;
+  background-color: #e2e8f0;
+  padding: 1.5rem;
+  border-radius: 0.75rem;
+  margin-top: 1.5rem;
+}
+
+.cardBox {
+  background-color: #ffffff;
+  border: 1px solid #cbd5e1;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  box-shadow: 0 1px 2px rgba(0, 0, 0, 0.05);
+  display: flex;
+  flex-direction: column;
+}
+
+.headerRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1.5rem;
+}
+
+.cardTitle {
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: #0b132b;
+  letter-spacing: 0.025em;
+}
+
+.legendWrapper {
+  display: flex;
+  gap: 1.25rem;
+  font-size: 0.8125rem;
+  color: #475569;
+  font-weight: 500;
+}
+
+.legendItem {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.dotLastMonth {
+  width: 10px;
+  height: 10px;
+  background-color: #854d0e;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.dotThisMonth {
+  width: 10px;
+  height: 10px;
+  background-color: #0b132b;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+/* منطقة الرسم البياني */
+.chartWrapper {
+  position: relative;
+  width: 100%;
+  height: 220px;
+  padding-left: 40px;
+  box-sizing: border-box;
+}
+
+.chartSvg {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.gridLine {
+  stroke: #e2e8f0;
+  stroke-width: 1;
+  stroke-dasharray: 3 3;
+}
+
+.yAxisLabels {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 35px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  font-size: 0.6875rem;
+  color: #64748b;
+  font-weight: 500;
+  text-align: right;
+  padding-right: 6px;
+  box-sizing: border-box;
+}
+
+.xAxisLabels {
+  display: flex;
+  justify-content: space-around;
+  font-size: 0.6875rem;
+  color: #64748b;
+  font-weight: 500;
+  margin-top: 0.75rem;
+  padding-left: 40px;
+}
+
+.financialRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  color: #475569;
+  font-weight: 500;
+  margin-bottom: 0.875rem;
+}
+
+.financialValue {
+  font-weight: 700;
+  color: #0b132b;
+}
+
+.negativeValue {
+  font-weight: 700;
+  color: #dc2626;
+}
+
+.divider {
+  height: 1px;
+  background-color: #cbd5e1;
+  margin: 1.25rem 0 1rem 0;
+}
+
+.payoutRow {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.9375rem;
+  font-weight: 800;
+  color: #0b132b;
+}
+
+.payoutValue {
+  color: #0b132b;
+}
