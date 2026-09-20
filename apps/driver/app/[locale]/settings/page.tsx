@@ -1,20 +1,87 @@
-// apps/driver/app/[locale]/settings/page.tsx
+// settings/SettingsCenter.tsx
+"use client";
 
-import React from 'react';
+import React, { useState } from "react";
+import styles from "./Settings.module.css";
 
-export default function SettingsPage() {
+// Import Tabs
+import PersonalInfoTab from "./tabs/PersonalInfoTab";
+import SecurityTab from "./tabs/SecurityTab";
+import DocumentsTab from "./tabs/DocumentsTab";
+import PaymentMethodsTab from "./tabs/tabs/PaymentMethodsTab";
+
+export default function SettingsCenter() {
+  const [activeTab, setActiveTab] = useState("personal-info");
+
+  const renderActiveTab = () => {
+    switch (activeTab) {
+      case "personal-info":
+        return <PersonalInfoTab />;
+      case "security":
+        return <SecurityTab />;
+      case "documents":
+        return <DocumentsTab />;
+      case "payment-methods":
+        return <PaymentMethodsTab />;
+      default:
+        return <PersonalInfoTab />;
+    }
+  };
+
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Settings</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Manage your account security, personal info, and application configurations.
-        </p>
+    <div className={styles["settings-container"]}>
+      {/* Header Section */}
+      <div className={styles["settings-header"]}>
+        <div>
+          <span className={styles["header-date"]}>Oct 26, 2023 . 08:20AM</span>
+          <h1 className={styles["settings-title"]}>Profile Settings</h1>
+          <p className={styles["settings-desc"]}>
+            Manage how you appear to partners and other members of the network.
+          </p>
+        </div>
+        <div className={styles["badge-verified"]}>
+          ✓ ACCOUNT VERIFIED
+        </div>
       </div>
 
-      <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm text-center">
-        <p className="text-gray-500">Settings configurations will appear here.</p>
+      {/* Tabs Navigation */}
+      <div className={styles["tabs-navigation"]}>
+        <button
+          className={`${styles["tab-btn"]} ${
+            activeTab === "personal-info" ? styles["tab-btn--active"] : ""
+          }`}
+          onClick={() => setActiveTab("personal-info")}
+        >
+          Personal Information
+        </button>
+        <button
+          className={`${styles["tab-btn"]} ${
+            activeTab === "security" ? styles["tab-btn--active"] : ""
+          }`}
+          onClick={() => setActiveTab("security")}
+        >
+          Security
+        </button>
+        <button
+          className={`${styles["tab-btn"]} ${
+            activeTab === "documents" ? styles["tab-btn--active"] : ""
+          }`}
+          onClick={() => setActiveTab("documents")}
+        >
+          Documents and Verification
+        </button>
+        <button
+          className={`${styles["tab-btn"]} ${
+            activeTab === "payment-methods" ? styles["tab-btn--active"] : ""
+          }`}
+          onClick={() => setActiveTab("payment-methods")}
+        >
+          Payment Methods
+        </button>
       </div>
+
+      {/* Dynamic Tab Content */}
+      <div className={styles["tab-content"]}>{renderActiveTab()}</div>
     </div>
   );
 }
