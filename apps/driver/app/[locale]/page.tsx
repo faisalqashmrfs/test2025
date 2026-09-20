@@ -1,10 +1,13 @@
 // apps/driver/app/[locale]/page.tsx
 'use client';
 
-import { DraftBanner } from '@xcarbox/ui';
 import React from 'react';
 import { useRouter } from 'next/navigation';
 import { dictionaries, Locale, defaultLocale } from '@xcarbox/i18n';
+import OverviewContent from './_components/OverviewContent';
+import EarningsChart from './_components/EarningsChart';
+import RecentActivities from './_components/RecentActivities';
+import AvailableOffersHeader from './trips/_components/AvailableOffersHeader';
 
 interface TripRequestsHeaderProps {
   locale: string;
@@ -29,14 +32,9 @@ export default async function DriverDashboardPage({ locale }: TripRequestsHeader
       {/* ترحيب عام أو عنوان الصفحة */}
       <div>
         <div>
-          <DraftBanner
-                  statusText={t.draft || 'Draft'}
-                  fromLocation="Berlin"
-                  toLocation="Munich"
-                  vehicleName="Porsche 911 GT3"
-                  buttonText={t.completeRequest || 'COMPLETE REQUEST'}
-                  onComplete={() => console.log('Complete draft')}
-                />
+          
+                < OverviewContent locale={locale}/>
+          
           
         </div>
       </div>

@@ -1,20 +1,34 @@
-// apps/driver/app/[locale]/earnings/page.tsx
+'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
+import ActiveTripBar from '../trips/_components/ActiveTripBar';
+import EarningsSummaryCards from './_components/EarningsSummaryCards';
+import EarningsTableSection from './_components/EarningsTableSection';
 
-export default function EarningsPage() {
+interface PageProps {
+  params: {
+    locale: string;
+  };
+}
+
+export default function EarningsPage({ params }: PageProps) {
+  const { locale } = params;
+  const [isSidebarOpen, setIsSidebarOpen] = useState(false);
+
   return (
-    <div className="space-y-6">
-      <div>
-        <h1 className="text-2xl font-bold text-gray-900">Earnings</h1>
-        <p className="text-sm text-gray-500 mt-1">
-          Track your daily, weekly, and monthly revenues and financial summaries.
-        </p>
+    <main style={{ paddingBottom: '3rem' }}>
+      {/* الشريط العلوي الخاص بالرحلة الحالية فقط */}
+      <div >
+        <ActiveTripBar />
       </div>
 
-      <div className="bg-white p-8 rounded-xl border border-gray-200 shadow-sm text-center">
-        <p className="text-gray-500">No earnings data available for this period.</p>
+      {/* محتوى قسم الأرباح والفواتير */}
+      <div >
+        <EarningsSummaryCards />
+        
+        {/* جدول الأرباح والفلترة المطابق للفيجما */}
+        <EarningsTableSection />
       </div>
-    </div>
+    </main>
   );
 }
