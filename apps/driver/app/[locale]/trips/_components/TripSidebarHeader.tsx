@@ -18,9 +18,10 @@ const SafeNavigation = Navigation as unknown as React.FC<any>;
 
 interface TripSidebarHeaderProps {
   onClose: () => void;
+  onViewMap?: () => void; // الخاصية الجديدة لتغيير عرض الصفحة الرئيسية بالكامل إلى خريطة
 }
 
-export default function TripSidebarHeader({ onClose }: TripSidebarHeaderProps) {
+export default function TripSidebarHeader({ onClose, onViewMap }: TripSidebarHeaderProps) {
   const [isOpen, setIsOpen] = useState(false);
 
   useEffect(() => {
@@ -120,7 +121,11 @@ export default function TripSidebarHeader({ onClose }: TripSidebarHeaderProps) {
             </div>
           </div>
 
-          <button className={styles.viewOnMapBtn}>
+          {/* زر View On Map الخارجي */}
+          <button 
+            className={styles.viewOnMapBtn}
+            onClick={onViewMap}
+          >
             <SafeMap className="w-4 h-4" />
             <span>View On Map</span>
           </button>

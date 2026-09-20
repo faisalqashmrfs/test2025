@@ -1,3 +1,5 @@
+'use client';
+
 import React from 'react';
 import { 
   MapPin, 
@@ -7,6 +9,7 @@ import {
   RotateCw 
 } from 'lucide-react';
 import styles from './AvailableOffersHeader.module.css';
+import ActiveTripBar from './ActiveTripBar';
 
 const SafeMapPin = MapPin as unknown as React.FC<any>;
 const SafeFlag = Flag as unknown as React.FC<any>;
@@ -16,12 +19,23 @@ const SafeRotateCw = RotateCw as unknown as React.FC<any>;
 
 interface AvailableOffersHeaderProps {
   locale: string;
+  onOpenSidebar?: () => void;
+  currentViewMode: 'cards' | 'table' | 'map';
+  onViewModeChange: (mode: 'cards' | 'table' | 'map') => void;
 }
 
-export default function AvailableOffersHeader({ locale }: AvailableOffersHeaderProps) {
+export default function AvailableOffersHeader({ 
+  locale, 
+  onOpenSidebar, 
+  currentViewMode, 
+  onViewModeChange 
+}: AvailableOffersHeaderProps) {
   return (
     <div className={styles.offersHeaderRoot}>
       
+      {/* 0. شريط الرحلة النشطة الثابت في أعلى الترويسة لجميع صفحات الـ Trips */}
+      <ActiveTripBar onViewDetails={onOpenSidebar} />
+
       {/* 1. معلومات الوقت والزر العلوي وتبديل العرض */}
       <div className={styles.topInfoBar}>
         <div className={styles.dateAndBadge}>
@@ -29,9 +43,24 @@ export default function AvailableOffersHeader({ locale }: AvailableOffersHeaderP
           <span className={styles.newOffersBadge}>12 New Offers</span>
         </div>
         <div className={styles.viewModeToggleGroup}>
-          <button className={styles.viewModeBtnInactive}>Map</button>
-          <button className={styles.viewModeBtnInactive}>Table</button>
-          <button className={styles.viewModeBtnActive}>Cards</button>
+          <button 
+            onClick={() => onViewModeChange('map')}
+            className={currentViewMode === 'map' ? styles.viewModeBtnActive : styles.viewModeBtnInactive}
+          >
+            Map
+          </button>
+          <button 
+            onClick={() => onViewModeChange('table')}
+            className={currentViewMode === 'table' ? styles.viewModeBtnActive : styles.viewModeBtnInactive}
+          >
+            Table
+          </button>
+          <button 
+            onClick={() => onViewModeChange('cards')}
+            className={currentViewMode === 'cards' ? styles.viewModeBtnActive : styles.viewModeBtnInactive}
+          >
+            Cards
+          </button>
         </div>
       </div>
 
