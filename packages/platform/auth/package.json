@@ -9,6 +9,6 @@
     "lint": "echo 'auth lint'"
   },
   "dependencies": {
-    "@xcarbox/contracts": "workspace:*"
+
   }
 }

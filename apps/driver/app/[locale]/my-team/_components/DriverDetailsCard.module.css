@@ -1,0 +1,260 @@
+.container {
+  background-color: #1e293b;
+  border: 1px solid #475569;
+  border-radius: 0.75rem;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  width: 100%;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-bottom: 1px solid #334155;
+  padding-bottom: 1rem;
+}
+
+.headerLeft {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+}
+
+.avatar {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.avatarInitials {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  background-color: #475569;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 0.875rem;
+}
+
+.headerName {
+  font-weight: 700;
+  font-size: 1rem;
+  color: #ffffff;
+}
+
+.headerEmail {
+  color: #94a3b8;
+  font-size: 0.875rem;
+}
+
+.headerDate {
+  display: flex;
+  flex-direction: column;
+  font-size: 0.75rem;
+  color: #94a3b8;
+}
+
+.headerDateMain {
+  font-weight: 700;
+  color: #ffffff;
+}
+
+.stateBadge {
+  font-weight: 800;
+  font-size: 0.75rem;
+  letter-spacing: 0.05em;
+}
+
+.stateVerified {
+  color: #34d399;
+}
+
+.closeButton {
+  background: none;
+  border: none;
+  color: #94a3b8;
+  font-weight: 700;
+  cursor: pointer;
+  font-size: 0.875rem;
+}
+
+.closeButton:hover {
+  color: #ffffff;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 1.5rem;
+}
+
+.leftColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.cardBox {
+  background-color: #0f172a;
+  border: 1px solid #334155;
+  border-radius: 0.5rem;
+  padding: 1.25rem;
+}
+
+.cardTitle {
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #94a3b8;
+  margin-bottom: 1rem;
+  letter-spacing: 0.05em;
+}
+
+.personalInfoList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.infoRow {
+  display: flex;
+  justify-content: space-between;
+  color: #cbd5e1;
+}
+
+.infoLabel {
+  color: #94a3b8;
+}
+
+.infoValue {
+  font-weight: 600;
+  color: #ffffff;
+}
+
+.tripsTable {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.8125rem;
+}
+
+.tripsTable th {
+  color: #64748b;
+  font-weight: 700;
+  padding: 0.5rem 0.75rem;
+  border-bottom: 1px solid #334155;
+  text-align: left;
+}
+
+.tripsTable td {
+  padding: 0.75rem;
+  color: #cbd5e1;
+  border-bottom: 1px solid #1e293b;
+}
+
+.rightColumn {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.metricsList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.metricRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.metricValueVerified {
+  color: #34d399;
+  font-weight: 700;
+}
+
+.metricValueWarning {
+  color: #f87171;
+  font-weight: 700;
+}
+
+.docList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  font-size: 0.875rem;
+}
+
+.docRow {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #cbd5e1;
+}
+
+.docValid {
+  color: #34d399;
+}
+
+.docInvalid {
+  color: #f87171;
+}
+
+.actionsFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #334155;
+  padding-top: 1rem;
+}
+
+.exportBtn {
+  background-color: #f8fafc;
+  color: #0b132b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.375rem;
+}
+
+.actionButtonsRight {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.suspenseBtn {
+  background-color: #fef3c7;
+  color: #92400e;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
+
+.deleteBtn {
+  background-color: #fee2e2;
+  color: #991b1b;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 0.375rem;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+}
