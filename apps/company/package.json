@@ -12,7 +12,6 @@
     "@xcarbox/api": "workspace:*",
     "@xcarbox/auth": "workspace:*",
     "@xcarbox/cars": "workspace:*",
-    "@xcarbox/contracts": "workspace:*",
     "@xcarbox/i18n": "workspace:*",
     "@xcarbox/ui": "workspace:*",
   
